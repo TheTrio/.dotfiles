@@ -119,22 +119,17 @@ fi
 export PATH=$PATH:$HOME/.local/bin
  
 # Powerline configuration
-export POWERLINE_PATH=$HOME/.local/lib/python3.8/site-packages/powerline
-if [ -f $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh ]; then
-    $HOME/.local/bin/powerline-daemon -q
-    POWERLINE_BASH_CONTINUATION=1
-    POWERLINE_BASH_SELECT=1
-    source $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
-fi
+# export POWERLINE_PATH=$HOME/.local/lib/python3.8/site-packages/powerline
+# if [ -f $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh ]; then
+#     $HOME/.local/bin/powerline-daemon -q
+#     POWERLINE_BASH_CONTINUATION=1
+#     POWERLINE_BASH_SELECT=1
+#     source $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
+# fi
+
 # PS1="$PS1\n" 
 # oh my posh
-#eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/jandedobbeleer.omp.json)"
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-source "$HOME/.cargo/env"
-# for python virtual env wrapper
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Projects
-source ~/.local/bin/virtualenvwrapper.sh
+eval "$(oh-my-posh --init --shell bash --config ~/.config/oh_my_posh/theme.json)"
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
