@@ -130,6 +130,10 @@ export PATH=$PATH:$HOME/.local/bin
 # PS1="$PS1\n" 
 # oh my posh
 eval "$(oh-my-posh --init --shell bash --config ~/.config/oh_my_posh/theme.json)"
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PIPENV_VENV_IN_PROJECT=1
+export SPICETIFY_INSTALL="/home/shashwat/spicetify-cli"
+export PATH="$SPICETIFY_INSTALL:$PATH"
+alias ssh="kitty +kitten ssh"
