@@ -4,29 +4,12 @@ PWD=$(pwd)
 apt-get update
 apt-get upgrade
 
-# installing my packages
-apt-get install < packages_list.txt
-
-# installing snap packages
-
-# Spotify
-sudo snap install spotify
-
 # VS Code
 sudo snap install code --classic
-
-# installing VS Code extensions
-code --install-extension CoenraadS.bracket-pair-colorizer
-code --install-extension DigitalBrainstem.javascript-ejs-support
-code --install-extension esbenp.prettier-vscode
-code --install-extension ms-python.python
-code --install-extension ms-toolsai.jupyter
-code --install-extension zhuangtongfa.material-theme
 
 # Discord
 sudo snap install discord
 snap connect discord:system-observe
-
 
 # Oh my posh
 # For some reason, python powerline refuses to work anymore. Oh my posh seems like a good alterative
@@ -37,6 +20,9 @@ wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/theme
 unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
 chmod u+rw ~/.poshthemes/*.json
 rm ~/.poshthemes/themes.zip
+
+# Node Version Manager
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 # setting up the symlinks
 ln -s $PWD/.bashrc ~/.bashrc
