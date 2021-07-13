@@ -64,6 +64,7 @@
                         "ahead_and_behind_color": "#e43b44",
                         "behind_color": "#f77622",
                         "ahead_color": "#2ce8f5",
+			"display_status":true,
                         "stash_count_icon": "\uF692 "
                     },
                     "style": "diamond",
