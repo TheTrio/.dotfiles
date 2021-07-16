@@ -49,10 +49,35 @@ rm ~/.poshthemes/themes.zip
 # Node Version Manager
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
+# Setting up mouse gestures for GNOME. Last checked on Gnome 3.38
+# Github here -> https://github.com/bulletmark/libinput-gestures
+
+# Adding to user group
+$USER=shashwat
+gpasswd -a $USER input
+
+# Getting dependencies
+apt-get install wmctrl xdotool
+apt-get install libinput-tools
+apt-get install build-essential
+
+# installing libinput gestures
+git clone https://github.com/bulletmark/libinput-gestures.git
+cd libinput-gestures
+make install
+
+##########################################################################################
+# Following are the Gnome extensions I use. They work well with my mouse gestures
+# 1.https://extensions.gnome.org/extension/545/hide-top-bar/
+# 2.https://extensions.gnome.org/extension/708/panel-osd/
+# 3.https://extensions.gnome.org/extension/1040/random-wallpaper/
+# 4.https://extensions.gnome.org/extension/1485/workspace-matrix/
+
 # setting up the symlinks
 ln -s $PWD/.bashrc ~/.bashrc
 ln -s $PWD/.bash_aliases ~/.bash_aliases
 ln -s $PWD/.config/kitty ~/.config
 ln -s $PWD/.config/oh_my_posh ~/.config
 ln -s $PWD/.config/spotifyd ~/.config
+ln -s $PWD/.config/libinput-gestures.conf ~/.config
 echo "DONE!"
