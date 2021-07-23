@@ -31,6 +31,11 @@ betterdiscordctl --d-install snap install
 # cargo build --release
 # ./target/release/spotifyd
 
+# Since building from source takes a while, I've added the binary to this repo. If even this doesn't work,
+# building from source might be the only option
+cp $PWD/bin/spotify /usr/bin/spotifyd 
+systemctl --user start spotifyd.service
+systemctl --user enable spotifyd.service
 
 # Installing spotify TUI(https://github.com/Rigellute/spotify-tui#installation)
 snap install spt
