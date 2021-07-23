@@ -1,0 +1,4 @@
+icons:
+        when: never
+color:
+        when: always

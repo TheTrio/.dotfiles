@@ -4,6 +4,7 @@ PWD=$(pwd)
 apt-get update
 apt-get upgrade
 
+apt-get install curl wget
 # VS Code
 snap install code --classic
 
@@ -19,7 +20,7 @@ betterdiscordctl --d-install snap install
 
 # for some odd reason, the snap package for spotifyd didnd't work the last time I tried
 # I should however try that before compiling the thing from source
-snap install spotifyd
+# snap install spotifyd
 # More about running it as a systemd service here -> https://spotifyd.github.io/spotifyd/config/services/Sytemd.html
 
 # Below are the instructions to build it from source
@@ -46,9 +47,6 @@ unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
 chmod u+rw ~/.poshthemes/*.json
 rm ~/.poshthemes/themes.zip
 
-# Node Version Manager
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-
 # Setting up mouse gestures for GNOME. Last checked on Gnome 3.38
 # Github here -> https://github.com/bulletmark/libinput-gestures
 
@@ -72,12 +70,30 @@ make install
 # 2.https://extensions.gnome.org/extension/708/panel-osd/
 # 3.https://extensions.gnome.org/extension/1040/random-wallpaper/
 # 4.https://extensions.gnome.org/extension/1485/workspace-matrix/
+# 5.https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/
+# 6.https://extensions.gnome.org/extension/97/coverflow-alt-tab/
 
 # setting up the symlinks
+rm ~/.bashrc ~/.bash_aliases
 ln -s $PWD/.bashrc ~/.bashrc
 ln -s $PWD/.bash_aliases ~/.bash_aliases
 ln -s $PWD/.config/kitty ~/.config
+ln -s $PWD/.config/lsd ~/.config
 ln -s $PWD/.config/oh_my_posh ~/.config
 ln -s $PWD/.config/spotifyd ~/.config
 ln -s $PWD/.config/libinput-gestures.conf ~/.config
+
+# Now installing the fish shell
+apt-add-repository ppa:fish-shell/release-3 -y
+apt-get update
+apt-get install fish
+
+chsh -s /usr/bin/fish
+
+# Installing fisher
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+# Install NVM for fish shell
+fisher install jorgebucaran/nvm.fish
+
+
 echo "DONE!"
