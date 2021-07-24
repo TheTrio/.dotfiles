@@ -4,7 +4,7 @@ PWD=$(pwd)
 apt-get update
 apt-get upgrade
 
-apt-get install curl wget
+apt-get install curl wget flameshot
 # VS Code
 snap install code --classic
 
@@ -33,7 +33,8 @@ betterdiscordctl --d-install snap install
 
 # Since building from source takes a while, I've added the binary to this repo. If even this doesn't work,
 # building from source might be the only option
-cp $PWD/bin/spotify /usr/bin/spotifyd 
+sudo curl "https://github-releases.githubusercontent.com/359130663/6951fe88-f098-4ad4-a595-045fe2ca8387?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210723%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210723T151553Z&X-Amz-Expires=300&X-Amz-Signature=b23946713c4d95fac4694bb8ae466c4985e767af484c128ff5ed1cc94d1357a0&X-Amz-SignedHeaders=host&actor_id=10794178&key_id=0&repo_id=359130663&response-content-disposition=attachment%3B%20filename%3Dspotifyd&response-content-type=application%2Foctet-stream" -o /usr/bin/spotifyd
+
 systemctl --user start spotifyd.service
 systemctl --user enable spotifyd.service
 
@@ -85,7 +86,7 @@ ln -s $PWD/.bash_aliases ~/.bash_aliases
 ln -s $PWD/.config/kitty ~/.config
 ln -s $PWD/.config/lsd ~/.config
 ln -s $PWD/.config/oh_my_posh ~/.config
-ln -s $PWD/.config/spotifyd ~/.config
+cp $PWD/.config/spotifyd/spotifyd.conf ~/.config/spotifyd/spotifyd.conf
 ln -s $PWD/.config/libinput-gestures.conf ~/.config
 
 # Now installing the fish shell
