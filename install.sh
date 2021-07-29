@@ -4,6 +4,13 @@ PWD=$(pwd)
 apt-get update
 apt-get upgrade
 
+# Installing vim and vim Plug
+apt-get install vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+
+
 apt-get install curl wget flameshot
 # VS Code
 snap install code --classic
@@ -88,6 +95,7 @@ ln -s $PWD/.config/lsd ~/.config
 ln -s $PWD/.config/oh_my_posh ~/.config
 cp $PWD/.config/spotifyd/spotifyd.conf ~/.config/spotifyd/spotifyd.conf
 ln -s $PWD/.config/libinput-gestures.conf ~/.config
+ln -s $PWD/.vimrc ~/.vimrc
 
 # Now installing the fish shell
 apt-add-repository ppa:fish-shell/release-3 -y
