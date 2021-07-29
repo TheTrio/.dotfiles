@@ -6,3 +6,4 @@ alias startMongo="mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mong
 alias pip="pip3"
 alias findgpu="glxinfo|egrep \"OpenGL vendor|OpenGL renderer\""
 alias ls="lsd"
+alias g++="g++ -std=c++17"
