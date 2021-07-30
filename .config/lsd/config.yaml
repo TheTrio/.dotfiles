@@ -1,4 +1,4 @@
 icons:
-        when: never
+        #        when: never
 color:
         when: always

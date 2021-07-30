@@ -1,9 +1,12 @@
 call plug#begin('~/.vim/plugged')
 Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
-
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
-
+set encoding=utf8
+let g:NERDTreeHijackNetrw = 1
+au VimEnter NERD_tree_1 enew | execute 'NERDTree '.argv()[0]
 set laststatus=2
 let g:lightline = {
   \ 'colorscheme': 'onedark',
@@ -20,3 +23,8 @@ endif
 
 colorscheme onedark
 set number
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+map <F2> :NERDTreeToggle<CR>
