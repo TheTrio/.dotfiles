@@ -135,5 +135,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PIPENV_VENV_IN_PROJECT=1
 export SPICETIFY_INSTALL="/home/shashwat/spicetify-cli"
-export PATH="$SPICETIFY_INSTALL:$PATH"
+export PATH="/home/shashwat/.local/bin:$PATH"
 alias ssh="kitty +kitten ssh"
+source /etc/profile.d/apps-bin-path.sh

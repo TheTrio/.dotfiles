@@ -1,8 +1,6 @@
 alias nf="neofetch"
 alias cd..="cd .."
 alias cat="batcat --theme=TwoDark"
-alias respl="powerline-daemon --replace"
-alias startMongo="mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mongod.log --fork"
 alias findgpu="glxinfo|egrep \"OpenGL vendor|OpenGL renderer\""
 alias ls="lsd -la"
 alias g++="g++ -std=c++17"
