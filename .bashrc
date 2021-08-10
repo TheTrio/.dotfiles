@@ -138,3 +138,8 @@ export SPICETIFY_INSTALL="/home/shashwat/spicetify-cli"
 export PATH="/home/shashwat/.local/bin:$PATH"
 alias ssh="kitty +kitten ssh"
 source /etc/profile.d/apps-bin-path.sh
+if shopt -q login_shell; then 
+  export PYENV_ROOT="$HOME/.pyenv" 
+  export PATH="$PYENV_ROOT/bin:$PATH" 
+ eval "$(pyenv init --path)" 
+fi
