@@ -68,6 +68,7 @@ Download it and place it in the Downloads directory.
 
 ```
 cp ~/Downloads/spotifyd /usr/bin/
+chmod +x /usr/bin/spotifyd
 mkdir ~/.config/systemd/user/ -p
 cp $PWD/spotifyd.service ~/.config/system/user/
 mkdir ~/.config/spotifyd
