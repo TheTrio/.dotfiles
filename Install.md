@@ -9,6 +9,12 @@ apt-get update
 apt-get upgrade
 ```
 
+### Install curl and wget
+
+```
+apt-get install curl wget -y
+```
+
 ### Install Vim and its plugins
 
 The following plugins are installed by default
@@ -30,11 +36,6 @@ ln -s $PWD/.vimrc ~/.vimrc
 Then run `:PlugInstall` in vim
 
 
-### Install curl and wget
-
-```
-apt-get install curl wget -y
-```
 
 ### Install VS Code
 
