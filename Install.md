@@ -35,8 +35,6 @@ ln -s $PWD/.vimrc ~/.vimrc
 
 Then run `:PlugInstall` in vim
 
-
-
 ### Install VS Code
 
 ```
@@ -63,11 +61,10 @@ betterdiscordctl --d-install snap install
 
 ### Install Spotifyd and SPT
 
-Unfortunately, this is a bit more complicated than the others. The snap package doesn't work for me and the released binaries don't either. I've had to compile the whole thing myself, and fortunately, that did fix the problem. However, to save myself from compiling the thing every single time, I've added a release on Github itself. 
-
-Download it and place it in the Downloads directory. 
+Unfortunately, this is a bit more complicated than the others. The snap package doesn't work for me and the released binaries don't either. I've had to compile the whole thing myself, and fortunately, that did fix the problem. However, to save myself from compiling the thing every single time, I've added a release on Github itself.
 
 ```
+curl https://github.com/TheTrio/.dotfiles/releases/download/1/spotifyd -o ~/Downloads/spotifyd
 cp ~/Downloads/spotifyd /usr/bin/
 chmod +x /usr/bin/spotifyd
 mkdir ~/.config/systemd/user/ -p
@@ -79,6 +76,8 @@ systemctl --user start spotifyd.service
 systemctl --user enable spotifyd.service
 
 snap install spt
+
+cp $PWD/.config/spotify-tui/config.yaml ~/snap/spt/current/.config/spotify-tui/
 ```
 
 Before starting SPT remember to enter your username and password in the `spotifyd.conf` file
@@ -93,7 +92,7 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 ln -s ~/.local/kitty.app/bin/kitty ~/.local/bin/
 cp ~/.local/kitty.app/share/applications/kitty.desktop ~/.local/share/applications/
 # Update the path to the kitty icon in the kitty.desktop file
-sed -i "s|Icon=kitty|Icon=/home/$USER/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g"  \ 
+sed -i "s|Icon=kitty|Icon=/home/$USER/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g"  \
     ~/.local/share/applications/kitty.desktop
 ```
 
@@ -107,14 +106,15 @@ ln -s $PWD/.config/kitty ~/.config
 ### Install Nerd Fonts
 
 1. JetBrains Mono
+
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
 ```
+
 2. Meslo LGM Nerd Font
 
-Download and extract the [zip file](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip) and run the following commands
-
 ```
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip -O ~/Downloads/Meslo.zip
 find . -name "*Complete.ttf" -delete
 find . -name "*Windows*" -delete
 cp *.ttf /usr/share/fonts/
@@ -185,7 +185,7 @@ rm -rf libinput-gestures
 ln -s $PWD/.config/libinput-gestures.conf ~/.config
 ```
 
-After restarting(or logging out), enter the following command 
+After restarting(or logging out), enter the following command
 
 ```
 libinput-gestures-setup autostart start
@@ -194,7 +194,7 @@ libinput-gestures-setup autostart start
 ### LSD
 
 ```
-curl https://github.com/Peltoche/lsd/releases/download/0.20.1/lsd-musl_0.20.1_amd64.deb -o lsd.deb
+wget https://github.com/Peltoche/lsd/releases/download/0.20.1/lsd-musl_0.20.1_amd64.deb -O lsd.deb
 dpkg -i lsd.deb
 rm lsd.deb
 ln -s $PWD/.config/lsd ~/.config
