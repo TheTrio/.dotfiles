@@ -38,7 +38,8 @@ Then run `:PlugInstall` in vim
 ### Install VS Code
 
 ```
-snap install code --classic
+wget --output-document vs_code.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
+sudo apt install ./vs_code.deb
 ```
 
 ### Install flameshot
@@ -50,13 +51,12 @@ apt-get install flameshot -y
 ### Install discord and Better Discord
 
 ```
-snap install discord
-snap connect discord:system-observe
+wget --output-document discord.deb "https://discord.com/api/download?platform=linux&format=deb"
+sudo apt install ./discord.deb
+wget "https://github.com/BetterDiscord/Installer/releases/download/v1.0.0-hotfix/BetterDiscord-Linux.AppImage"
 
-add-apt-repository ppa:chronobserver/betterdiscordctl -y
-apt-get update
-apt-get install betterdiscordctl -y
-betterdiscordctl --d-install snap install
+chmod u+x ./BetterDiscord-Linux.AppImage
+./BetterDiscord-Linux.AppImage
 ```
 
 ### Install Spotifyd and SPT
@@ -75,9 +75,11 @@ cp $PWD/.config/spotifyd/spotifyd.conf ~/.config/spotifyd/spotifyd.conf
 systemctl --user start spotifyd.service
 systemctl --user enable spotifyd.service
 
-snap install spt
+wget https://github.com/Rigellute/spotify-tui/releases/download/v0.24.0/spotify-tui-linux.tar.gz
+tar xvf spotify-tui-linux.tar.gz
+sudo mv spt /usr/bin
 
-cp $PWD/.config/spotify-tui/config.yaml ~/snap/spt/current/.config/spotify-tui/
+ln -s $PWD/.config/spotify-tui/config.yaml ~/.config/spotify-tui/
 ```
 
 Before starting SPT remember to enter your username and password in the `spotifyd.conf` file
@@ -199,6 +201,18 @@ dpkg -i lsd.deb
 rm lsd.deb
 ln -s $PWD/.config/lsd ~/.config
 ```
+
+### Uninstall snapd
+
+My experience with snaps hasn't been good. They are bloated and mount a lot of partitions which slows up startup time.
+
+```
+sudo apt purge snapd
+```
+
+## GNOME Specific
+
+I don't use GNOME anymore so this is kinda irrelevant but I'll keep it here in case I hop DEs anytime.
 
 ### Pop Shell
 
