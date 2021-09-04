@@ -1,4 +1,5 @@
 oh-my-posh --init --shell fish --config ~/.config/oh_my_posh/theme.json | source
+# starship init fish | source
 source ~/.bash_aliases
 set fish_greeting
 export PIPENV_VENV_IN_PROJECT=1

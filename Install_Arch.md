@@ -11,7 +11,7 @@ pacman -Syu vim nano vi sudo wget curl unzip
 ## User management
 
 ```
-useradd shashwat -h -g wheel,input,disk,audio,video,storage
+useradd shashwat -m -G wheel,input,disk,audio,video,storage
 passwd shashwat
 ```
 
@@ -240,8 +240,8 @@ And finally,
 
 ```
 
-pipenv install 3.9
-pipenv install 3.8
+pyenv install 3.9
+pyenv install 3.8
 
 ```
 
