@@ -4,8 +4,6 @@ source ~/.bash_aliases
 set fish_greeting
 export PIPENV_VENV_IN_PROJECT=1
 pokemon-colorscripts -r
-status is-interactive; and pyenv init --path | source
-pyenv init - | source
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
