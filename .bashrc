@@ -135,11 +135,8 @@ eval "$(starship init bash)"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PIPENV_VENV_IN_PROJECT=1
-export SPICETIFY_INSTALL="/home/shashwat/spicetify-cli"
 export PATH="/home/shashwat/.local/bin:$PATH"
 alias ssh="kitty +kitten ssh"
-if shopt -q login_shell; then 
-  export PYENV_ROOT="$HOME/.pyenv" 
-  export PATH="$PYENV_ROOT/bin:$PATH" 
- eval "$(pyenv init --path)" 
-fi
+. "$HOME/.cargo/env"
+eval "$(pyenv init -)"
+

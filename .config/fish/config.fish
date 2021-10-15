@@ -1,8 +1,9 @@
-oh-my-posh --init --shell fish --config ~/.config/oh_my_posh/theme.json | source
-# starship init fish | source
+# oh-my-posh --init --shell fish --config /home/shashwat/.poshthemes/tonybaloney.omp.json | source
+starship init fish | source
 source ~/.bash_aliases
-set fish_greeting
 export PIPENV_VENV_IN_PROJECT=1
+status is-login; and pyenv init --path | source
+status is-interactive; and pyenv init - | source
 pokemon-colorscripts -r
 if status is-interactive
     # Commands to run in interactive sessions can go here
