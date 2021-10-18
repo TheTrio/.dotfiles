@@ -140,6 +140,8 @@ pacman -Syu bat
 
 ### Oh my posh
 
+Recently, I've started using the starship prompt, but I'll keep this here just in case I change my mind
+
 ```
 
 wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
@@ -152,6 +154,12 @@ rm ~/.poshthemes/themes.zip
 
 ln -sf $PWD/.config/oh_my_posh ~/.config
 
+```
+
+### Starship prompt
+
+```
+pacman -Syu starship
 ```
 
 ### Pokemon colorscripts
