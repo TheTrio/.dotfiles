@@ -65,6 +65,8 @@ packages=(
   "ncdu"
   "htop"
   "discord"
+  "bluez"
+  "bluez-utils"
 )
 
 aur_packaes=(
@@ -73,6 +75,7 @@ aur_packaes=(
   "libinput-gestures"
   "visual-studio-code-bin"
   "ncspot"
+  "ulauncher"
 )
 
 print_middle () {
@@ -142,6 +145,7 @@ enable_sddm () {
 enable_network () {
   sudo systemctl enable NetworkManager
   sudo systemctl start NetworkManager
+  sudo systemctl enable bluetooth --now
   done=$((done+1))
 }
 

@@ -53,6 +53,24 @@ systemctl enable NetworkManager
 systemctl start NetworkManager
 ```
 
+## Installing Bluetooth
+
+```
+pacman -Syu bluez bluez-utils
+```
+
+Check whether the kernel module is loaded
+
+```
+lsmod | grep bluetooth
+```
+
+And then start the bluetooth service
+
+```
+sudo systemctl enable bluetooth --now
+```
+
 ## Install Kitty
 
 ```
@@ -80,9 +98,7 @@ ln -sf $PWD/.bash_aliases ~/.bash_aliases
 ## Enabling hardware acceleration
 
 ```
-
 pacman -Syu xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau mesa
-
 ```
 
 ## GPU drivers
@@ -90,25 +106,19 @@ pacman -Syu xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau mesa
 Run the following to get the current drivers
 
 ```
-
 lspci -k | grep -A 2 -E "(VGA|3D)"
-
 ```
 
 Install proprietary nvidia drivers with
 
 ```
-
 pacman -Syu nvidia nvidia-prime
-
 ```
 
 ## Installing essential KDE Applications
 
 ```
-
 pacman -S gwenview kwalletmanager kwallet partitionmanager dolphin
-
 ```
 
 ## Making the terminal look pretty
@@ -116,26 +126,20 @@ pacman -S gwenview kwalletmanager kwallet partitionmanager dolphin
 ### Fonts
 
 ```
-
 sudo pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-jetbrains-mono
-
 ```
 
 ### LSD
 
 ```
-
 pacman -Syu lsd
 ln -sf $PWD/.config/lsd ~/.config
-
 ```
 
 ### BAT
 
 ```
-
 pacman -Syu bat
-
 ```
 
 ### Oh my posh
@@ -143,7 +147,6 @@ pacman -Syu bat
 Recently, I've started using the starship prompt, but I'll keep this here just in case I change my mind
 
 ```
-
 wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
 chmod +x /usr/local/bin/oh-my-posh
 mkdir ~/.poshthemes
@@ -153,7 +156,6 @@ chmod u+rw ~/.poshthemes/\*.json
 rm ~/.poshthemes/themes.zip
 
 ln -sf $PWD/.config/oh_my_posh ~/.config
-
 ```
 
 ### Starship prompt
@@ -165,11 +167,9 @@ pacman -Syu starship
 ### Pokemon colorscripts
 
 ```
-
 git clone https://gitlab.com/phoneybadger/pokemon-colorscripts.git
 cd pokemon-colorscripts/
 sudo ./install.sh
-
 ```
 
 ### Vim Plugins
@@ -184,37 +184,29 @@ The following plugins are installed by default
 The Plugin manager I use is [Vim Plug](https://github.com/junegunn/vim-plug)
 
 ```
-
 yay -Syu vim-plug
 ln -sf $PWD/.vimrc ~/.vimrc
-
 ```
 
 ### Others
 
 ```
-
 pacman -Syu neofetch lolcat
-
 ```
 
 ## Installing web browsers
 
 ```
-
 yay -Syu google-chrome
 pacman -Syu firefox
-
 ```
 
 ## libinput gestures
 
 ```
-
 yay -S libinput-gestures
 ln -sf $PWD/.config/libinput-gestures.conf ~/.config
 libinput-gestures-setup autostart start
-
 ```
 
 ## Development Environment
@@ -222,44 +214,34 @@ libinput-gestures-setup autostart start
 ### VS Code
 
 ```
-
 pacman -Syu gnome-keyring
 yay -S visual-studio-code-bin
-
 ```
 
 ### pyenv
 
 ```
-
 pacman -Syu pyenv
-
 ```
 
 Also the python build dependencies
 
 ```
-
 pacman -S --needed base-devel openssl zlib xz
-
 ```
 
 And finally,
 
 ```
-
 pyenv install 3.9
 pyenv install 3.8
-
 ```
 
 ### Node
 
 ```
-
 fisher install jorgebucaran/nvm.fish
 nvm install 14
-
 ```
 
 ## ncspot
@@ -267,13 +249,11 @@ nvm install 14
 Having used `spotify-tui` for a while, ncspot seems easier to set up and use.
 
 ```
-
 yay -S ncspot
-
 ```
 
 ## Other Utilities
 
 ```
-pacman -Syu ncdu htop discord
+pacman -Syu ncdu htop discord ulauncher
 ```
