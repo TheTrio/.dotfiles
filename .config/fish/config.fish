@@ -5,9 +5,9 @@ export PIPENV_VENV_IN_PROJECT=1
 status is-login; and pyenv init --path | source
 status is-interactive; and pyenv init - | source
 pokemon-colorscripts -r
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
+
+set -x VISUAL "vim"
+set -x EDITOR "vim"
 
 function bind_bang
     switch (commandline -t)[-1]
