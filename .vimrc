@@ -29,3 +29,6 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 map <F2> :NERDTreeToggle<CR>
+set expandtab
+set tabstop=2
+set softtabstop=2
