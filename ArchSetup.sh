@@ -18,7 +18,7 @@ set -e
 
 cols=$(tput cols)
 done=1
-total=12
+total=13
 
 
 packages=(
@@ -145,6 +145,10 @@ enable_sddm () {
 enable_network () {
   sudo systemctl enable NetworkManager
   sudo systemctl start NetworkManager
+  done=$((done+1))
+}
+
+enable_bluetooth() {
   sudo systemctl enable bluetooth --now
   done=$((done+1))
 }
@@ -256,6 +260,9 @@ enable_sddm
 print_update "Setting up the network(${done} of ${total})"
 enable_network
 
+print_update "Setting up bluetooth(${done} of ${total})"
+enable_bluetooth
+
 print_update "Setting up the symlinks(${done} of ${total})"
 setup_symlinks
 
@@ -279,6 +286,8 @@ setup_node
 
 printf "\033c"
 printf "${Green}Installation completed successfully.${White}\n\n"
+
+printf "${Yellow}Remember to read the guide for any other instructions!\n\n"
 
 read -p "Restart?(Y/n): " restart_choice
 if [ $restart_choice == "" || $restart_choice == "y" || $restart_choice == "Y" ]; then
