@@ -19,6 +19,8 @@ Following this editor the sudoers file to ensure that the users in the wheel gro
 
 # Swap file
 
+## Creating the swap
+
 ```
 dd if=/dev/zero of=/swapfile bs=1G count=4 status=progress
 chmod 600 /swapfile
@@ -71,9 +73,9 @@ And then start the bluetooth service
 sudo systemctl enable bluetooth --now
 ```
 
-# Kernal Modules
+# Kernal
 
-## Ethernet
+## Ethernet module
 
 I've had much better luck with the [r8168](https://archlinux.org/packages/community/x86_64/r8168/) kernel module than r8169, which is the one included by default
 
@@ -90,7 +92,7 @@ pacman -Syu r8168
 echo "blacklist r8169" >> /etc/modprobe.d/blacklist.conf
 ```
 
-## Webcam
+## Webcam module
 
 I prefer to have the laptop webcam disabled for privacy reasons. Run the following to add the necessary kernal module to the blocklist
 
@@ -109,6 +111,31 @@ Similarly, to disable it temporarily, do
 ```
 modprobe -r uvcvideo
 ```
+
+## Hibernation
+
+Details [here](https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Hibernation_into_swap_file)
+
+```
+findmnt -no UUID -T /swapfile
+sudo filefrag -v /swapfile | awk '$1=="0:" {print substr($4, 1, length($4)-2)}'
+```
+
+After finding the `UUID` and the `offset` of `/swapfile`, add the following kernel parameters
+
+```
+resume=UUID=THE_UUID resume_offset=THE_OFFSET
+```
+
+## Screen Brightness
+
+Add `acpi_backlight=vendor` to the kernel parameters
+
+## USB Auto Suspend
+
+The newer kernels enable this by default. I find it to be quite confusing.
+
+To disable, add `usbcore.autosuspend=-1` to the kernel parameters
 
 # Install Kitty
 
@@ -281,6 +308,12 @@ pyenv install 3.9
 ```
 fisher install jorgebucaran/nvm.fish
 nvm install 14
+```
+
+## Insomnia
+
+```
+yay -Syu insomnia-bin
 ```
 
 # ncspot
