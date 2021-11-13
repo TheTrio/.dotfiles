@@ -1,0 +1,9 @@
+google-chrome
+insomnia-bin
+libinput-gestures
+ncspot-bin
+ookla-speedtest-bin
+ulauncher
+vim-plug
+visual-studio-code-bin
+yay

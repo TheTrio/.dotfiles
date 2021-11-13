@@ -6,7 +6,8 @@ set -e
 done=1
 total=13
 
-source install_packages.sh
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+source "$SCRIPT_DIR/install_packages.sh"
 
 make_swap_file () {
   sudo dd if=/dev/zero of=/swapfile bs=1G count=4 status=progress
@@ -70,13 +71,10 @@ setup_posh () {
   done=$((done+1))
 }
 
-
-
 setup_mouse_gestures () {
   libinput-gestures-setup autostart start
   done=$((done+1))
 }
-
 
 setup_python () {
   pyenv install 3.9
@@ -99,6 +97,7 @@ if [ $(id -u) == 0 ]; then
       printf "\n"
     }
   }' /etc/passwd | wc -l)
+  
   if [ $normal_user -le 1 ]; then
     printf "${Yellow}No regular user found\n\n"
     printf "${White}Do you want to create it?(y/N) "

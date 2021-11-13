@@ -1,6 +1,6 @@
 # Stepwise Installation guide
 
-This is work in progress
+This is work in progress. This guide obviously doesn't have everything but should be a pretty good starting point. The script should take care of the rest
 
 # Install the essentials
 
