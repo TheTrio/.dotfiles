@@ -32,3 +32,4 @@ map <F2> :NERDTreeToggle<CR>
 set expandtab
 set tabstop=2
 set softtabstop=2
+cmap w!! w !sudo tee > /dev/null %

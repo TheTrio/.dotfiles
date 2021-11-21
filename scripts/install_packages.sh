@@ -7,15 +7,11 @@ source "$SCRIPT_DIR/formatting.sh"
 
 print_update "Installing pacman packages"
 
+
 install_packages () {
-  i=1
-  len=${#packages[@]}
-  for package in "${packages[@]}";do
-    printf "${Yellow}Installing ${package}. ${Blue}(${i}/${len})\n${Color_Off}"
-    sudo pacman -S --needed --noconfirm $package
-    i=$((i+1))
-  done
+  sudo pacman -S --needed --noconfirm - < "$SCRIPT_DIR/../packages/packages.txt"
 }
+
 
 print_update "Installing AUR packages"
 
