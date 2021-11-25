@@ -33,6 +33,7 @@ gnome-keyring
 gparted
 groff
 grub
+grub-customizer
 gwenview
 htop
 jre-openjdk
@@ -53,6 +54,7 @@ libva-mesa-driver
 libvdpau-va-gl
 linux
 linux-firmware
+linux-lts
 lolcat
 lsd
 m4
@@ -70,6 +72,7 @@ networkmanager
 noto-fonts-cjk
 noto-fonts-emoji
 nvidia
+nvidia-lts
 nvidia-prime
 okular
 os-prober
@@ -77,6 +80,7 @@ oxygen
 patch
 pavucontrol
 pdftk
+peek
 perl-clone
 perl-encode-locale
 perl-file-listing
@@ -111,8 +115,7 @@ python-pyparsing
 python-setuptools
 qbittorrent
 r8168
-sddm
-sddm-kcm
+solaar
 starship
 sudo
 telegram-desktop
@@ -134,5 +137,8 @@ xdg-desktop-portal-kde
 xdotool
 xf86-video-amdgpu
 xorg-server
+xorg-xev
+xorg-xinit
+xorg-xinput
 youtube-dl
 yt-dlp

@@ -8,7 +8,7 @@ pokemon-colorscripts -r
 
 set -x VISUAL "vim"
 set -x EDITOR "vim"
-
+set -x  MANPAGER "less -R --use-color -Dd+r -Du+b"
 function bind_bang
     switch (commandline -t)[-1]
         case "!"

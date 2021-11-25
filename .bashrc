@@ -4,6 +4,8 @@
 # If not running interactively, don't do anything
 export VISUAL=vim
 export EDITOR="$VISUAL"
+# enables color in man pages
+export MANPAGER="less -R --use-color -Dd+r -Du+b"
 
 case $- in
     *i*) ;;
