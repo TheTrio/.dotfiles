@@ -1,9 +1,14 @@
-google-chrome
+albert-bin
+heroku-cli-bin
 insomnia-bin
 libinput-gestures
+marktext-bin
 ncspot-bin
+nerd-fonts-meslo
 ookla-speedtest-bin
-ulauncher
+pfetch
+qdirstat
+tlpui
 vim-plug
 visual-studio-code-bin
 yay

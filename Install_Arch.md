@@ -19,8 +19,6 @@ Following this editor the sudoers file to ensure that the users in the wheel gro
 
 # Swap file
 
-## Creating the swap
-
 ```
 dd if=/dev/zero of=/swapfile bs=1G count=4 status=progress
 chmod 600 /swapfile
