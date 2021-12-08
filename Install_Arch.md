@@ -1,33 +1,35 @@
 # Stepwise Installation guide
 
-This is work in progress. This guide obviously doesn't have everything but should be a pretty good starting point. The script should take care of the rest
+This is work in progress. This guide obviously doesn't have everything but should be a pretty good starting point. The script should take care of the rest.
 
-# Install the essentials
+# Initial Setup
+
+## Basic packages
 
 ```
 pacman -Syu vim nano vi sudo wget curl unzip
 ```
 
-# User management
+## User management
 
 ```
-useradd shashwat -m -G wheel,input,disk,audio,video,storage
+useradd shashwat -m -G docker,video,storage,input,disk,audio,wheel,adm
 passwd shashwat
 ```
 
-Following this editor the sudoers file to ensure that the users in the wheel group can run commands as the root user.
+Following this edit the sudoers file to ensure that the users in the wheel group can run commands as the root user.
 
-# Swap file
+## Swap file
 
 ```
 dd if=/dev/zero of=/swapfile bs=1G count=4 status=progress
 chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
-sudo echo "/swapfile none swap defaults 0 0" >> /etc/fstab
+echo "/swapfile none swap defaults 0 0" >> /etc/fstab
 ```
 
-# Installing Yay
+## Installing Yay
 
 ```
 pacman -S --needed git base-devel
@@ -38,22 +40,19 @@ cd ..
 rm -rf yay
 ```
 
-# Install a Desktop Environment
+## Install a Desktop Environment
 
 ```
-pacman -Syu xorg-server plasma sddm
-systemctl enable sddm
-reboot
+pacman -Syu xorg-server plasma
 ```
 
-# Enable Network Manager
+## Enable Network Manager
 
 ```
-systemctl enable NetworkManager
-systemctl start NetworkManager
+systemctl enable NetworkManager --now
 ```
 
-# Installing Bluetooth
+## Installing Bluetooth
 
 ```
 pacman -Syu bluez bluez-utils
@@ -68,10 +67,10 @@ lsmod | grep bluetooth
 And then start the bluetooth service
 
 ```
-sudo systemctl enable bluetooth --now
+systemctl enable bluetooth --now
 ```
 
-# Kernal
+# Kernel
 
 ## Ethernet module
 
@@ -110,21 +109,6 @@ Similarly, to disable it temporarily, do
 modprobe -r uvcvideo
 ```
 
-## Hibernation
-
-Details [here](https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Hibernation_into_swap_file)
-
-```
-findmnt -no UUID -T /swapfile
-sudo filefrag -v /swapfile | awk '$1=="0:" {print substr($4, 1, length($4)-2)}'
-```
-
-After finding the `UUID` and the `offset` of `/swapfile`, add the following kernel parameters
-
-```
-resume=UUID=THE_UUID resume_offset=THE_OFFSET
-```
-
 ## Screen Brightness
 
 Add `acpi_backlight=vendor` to the kernel parameters
@@ -135,29 +119,31 @@ The newer kernels enable this by default. I find it to be quite confusing.
 
 To disable, add `usbcore.autosuspend=-1` to the kernel parameters
 
-# Install Kitty
+# Power Issues
+
+## Suspend
+
+In true NVIDIA fashion, `systemctl suspend` doesn't work if you have Xorg running on the NVIDIA GPU. 
+
+To verify, type `nvidia-smi | grep -i xorg`. 
+
+One way to solve would to run Xorg on your integrated GPU. I have faced issues doing that in the past, mostly relating to hardware acceleration. 
+
+Thus, the fix is to make sure the NVIDIA GPU powers down gracefully. 
 
 ```
-pacman -Syu kitty
-ln -sf $PWD/.config/kitty ~/.config
+systemctl enable nvidia-suspend
+systemctl enable nvidia-hibernate
+systemctl enable nvidia-resume
 ```
 
-# Configure shells
+I've also noticed that TLP makes suspend not work sometimes. Disabling it fixed the issue. 
 
-## Fish
+## Hibernate
 
-```
-pacman -Syu fish
-ln -sf $PWD/.config/fish/config.fish ~/.config/fish/
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
-```
+Again, blame NVIDIA.
 
-## Bash
-
-```
-ln -sf $PWD/.bashrc ~/.bashrc
-ln -sf $PWD/.bash_aliases ~/.bash_aliases
-```
+Switching to the LTS Kernel should fix this issue, but presently I have been unable to find a perfect solution for the latest kernel. 
 
 # Enabling hardware acceleration
 
@@ -179,18 +165,33 @@ Install proprietary nvidia drivers with
 pacman -Syu nvidia nvidia-prime
 ```
 
-# Installing essential KDE Applications
+# Terminal
+
+## Kitty
 
 ```
-pacman -S gwenview kwalletmanager kwallet partitionmanager dolphin
+pacman -Syu kitty
+ln -sf $PWD/.config/kitty ~/.config
 ```
 
-# Making the terminal look pretty
+## Fish
+
+```
+pacman -Syu fish fisher
+ln -sf $PWD/.config/fish/config.fish ~/.config/fish/
+```
+
+## Bash
+
+```
+ln -sf $PWD/.bashrc ~/.bashrc
+ln -sf $PWD/.bash_aliases ~/.bash_aliases
+```
 
 ## Fonts
 
 ```
-sudo pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-jetbrains-mono
+pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-jetbrains-mono
 ```
 
 ## LSD
@@ -206,22 +207,6 @@ ln -sf $PWD/.config/lsd ~/.config
 pacman -Syu bat
 ```
 
-## Oh my posh
-
-Recently, I've started using the starship prompt, but I'll keep this here just in case I change my mind
-
-```
-wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
-chmod +x /usr/local/bin/oh-my-posh
-mkdir ~/.poshthemes
-wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
-unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
-chmod u+rw ~/.poshthemes/\*.json
-rm ~/.poshthemes/themes.zip
-
-ln -sf $PWD/.config/oh_my_posh ~/.config
-```
-
 ## Starship prompt
 
 ```
@@ -231,9 +216,7 @@ pacman -Syu starship
 ## Pokemon colorscripts
 
 ```
-git clone https://gitlab.com/phoneybadger/pokemon-colorscripts.git
-cd pokemon-colorscripts/
-sudo ./install.sh
+yay -Syu pokemon-colorscripts-git
 ```
 
 ## Vim Plugins
@@ -252,26 +235,7 @@ yay -Syu vim-plug
 ln -sf $PWD/.vimrc ~/.vimrc
 ```
 
-## Others
 
-```
-pacman -Syu neofetch lolcat
-```
-
-# Installing web browsers
-
-```
-yay -Syu google-chrome
-pacman -Syu firefox
-```
-
-# libinput gestures
-
-```
-yay -S libinput-gestures
-ln -sf $PWD/.config/libinput-gestures.conf ~/.config
-libinput-gestures-setup autostart start
-```
 
 # Development Environment
 
@@ -314,7 +278,32 @@ nvm install 14
 yay -Syu insomnia-bin
 ```
 
-# ncspot
+## Docker
+
+```
+pacman -Syu docker
+```
+
+Docker slows down the boot process considerably, so I start the service before I use it rather than enabling it. 
+
+# KVM
+
+Firstly, check if KVM is supported by the processor.
+
+```
+LC_ALL=C lscpu | grep Virtualization
+```
+
+Then, install the necessary packages
+
+```
+pacman -Syu qemu libvirt virt-manager
+systemctl enable libvirtd.service --now
+```
+
+# Applications
+
+## ncspot
 
 Having used `spotify-tui` for a while, ncspot seems easier to set up and use.
 
@@ -322,7 +311,7 @@ Having used `spotify-tui` for a while, ncspot seems easier to set up and use.
 yay -S ncspot
 ```
 
-# Discord
+## Discord
 
 ```
 pacman -Syu discord
@@ -330,16 +319,53 @@ pacman -Syu discord
 
 Discord, or rather Chromium does have some issues with hardware acceleration by default so we have to manually enable some flags
 
-Add the following to the `discord.desktop` file, probably located in `/usr/share/applications`
+Add the following to the `discord.desktop` file. 
 
 ```
-Exec=/usr/bin/discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy
+Exec=/usr/bin/discord \
+  --ignore-gpu-blocklist \
+  --disable-features=UseOzonePlatform \
+  --enable-features=VaapiVideoDecoder \
+  --use-gl=desktop \
+  --enable-gpu-rasterization \
+  --enable-zero-copy
 ```
 
-Use the same flags for Google Chrome
+## Chromium
 
-# Other Utilities
+Out of the box, chromium is almost impossible to use. The following flags fix a host of things
+
+Add the following to `.config/chromium-flags.conf`
 
 ```
-pacman -Syu ncdu htop ulauncher
+--ignore-gpu-blocklist
+--password-store=basic
+--disable-features=UseOzonePlatform
+--enable-features=VaapiVideoDecoder
+--use-gl=desktop
+--enable-gpu-rasterization
+--enable-zero-copy
+--force-dark-mode
+--enable-features=WebUIDarkMode
+--profile-directory="Default"
+```
+
+## Albert
+
+```
+yay -Syu albert-bin
+```
+
+## libinput gestures
+
+```
+yay -S libinput-gestures
+ln -sf $PWD/.config/libinput-gestures.conf ~/.config
+libinput-gestures-setup autostart start
+```
+
+## Web browsers
+
+```
+pacman -Syu firefox chromium
 ```

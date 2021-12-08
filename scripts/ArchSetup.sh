@@ -46,11 +46,12 @@ enable_bluetooth() {
 setup_symlinks () {
   ln -sf $PWD/.config/kitty ~/.config
   ln -sf $PWD/.config/fish/config.fish ~/.config/fish/
-  ln -sf $PWD/.bashrc ~/.bashrc
-  ln -sf $PWD/.bash_aliases ~/.bash_aliases
+  ln -sf $PWD/shashwat/.bashrc ~/.bashrc
+  ln -sf $PWD/shashwat/.bash_aliases ~/.bash_aliases
   ln -sf $PWD/.config/lsd ~/.config
   ln -sf $PWD/.config/oh_my_posh ~/.config
-  ln -sf $PWD/.vimrc ~/.vimrc
+  ln -sf $PWD/shashwat/.vimrc ~/.vimrc
+  ln -sf $PWD/shashwat/.tldrc ~/.tldrc
   ln -sf $PWD/.config/libinput-gestures.conf ~/.config
   done=$((done+1))
 }

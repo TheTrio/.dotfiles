@@ -1,6 +1,10 @@
 albert-bin
+downgrade
+extramaus
 heroku-cli-bin
 insomnia-bin
+intellij-idea-ultimate-edition
+intellij-idea-ultimate-edition-jre
 libinput-gestures
 marktext-bin
 ncspot-bin
@@ -8,7 +12,7 @@ nerd-fonts-meslo
 ookla-speedtest-bin
 pfetch
 qdirstat
-tlpui
+system76-power
 vim-plug
 visual-studio-code-bin
 yay

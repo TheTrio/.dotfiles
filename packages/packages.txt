@@ -37,6 +37,7 @@ gparted
 groff
 gwenview
 htop
+jdk-openjdk
 jq
 jre-openjdk
 kde-gtk-config
@@ -81,6 +82,7 @@ nvidia-settings
 okular
 os-prober
 oxygen
+packagekit-qt5
 patch
 pavucontrol
 pdftk
@@ -129,7 +131,6 @@ sudo
 telegram-desktop
 texinfo
 tk
-tlp
 tmux
 ttf-dejavu
 ttf-jetbrains-mono
