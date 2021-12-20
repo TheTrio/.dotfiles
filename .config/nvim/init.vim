@@ -1,15 +1,15 @@
 call plug#begin('~/.vim/plugged')
 Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'mhinz/vim-startify'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'raimondi/delimitmate'
+Plug 'romgrk/barbar.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
 call plug#end()
 set encoding=utf8
-let g:NERDTreeHijackNetrw = 1
-au VimEnter NERD_tree_1 enew | execute 'NERDTree '.argv()[0]
 set laststatus=2
 let g:lightline = {
   \ 'colorscheme': 'onedark',
@@ -30,8 +30,6 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-map <F2> :NERDTreeToggle<CR>
-map <F3> :NERDTreeFocus<CR>
 set expandtab
 set tabstop=2
 set softtabstop=2
@@ -55,3 +53,24 @@ command! -nargs=0 Format :call CocAction('format')
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 map <silent><expr> <c-f> :call CocAction('format')<CR>
+set termguicolors
+nnoremap <silent>    <A-,> :BufferPrevious<CR>
+nnoremap <silent>    <A-.> :BufferNext<CR>
+" Re-order to previous/next
+nnoremap <silent>    <A-<> :BufferMovePrevious<CR>
+nnoremap <silent>    <A->> :BufferMoveNext<CR>
+" Goto buffer in position...
+nnoremap <silent>    <A-1> :BufferGoto 1<CR>
+nnoremap <silent>    <A-2> :BufferGoto 2<CR>
+nnoremap <silent>    <A-3> :BufferGoto 3<CR>
+nnoremap <silent>    <A-4> :BufferGoto 4<CR>
+nnoremap <silent>    <A-5> :BufferGoto 5<CR>
+nnoremap <silent>    <A-6> :BufferGoto 6<CR>
+nnoremap <silent>    <A-7> :BufferGoto 7<CR>
+nnoremap <silent>    <A-8> :BufferGoto 8<CR>
+nnoremap <silent>    <A-9> :BufferLast<CR>
+" Pin/unpin buffer
+nnoremap <silent>    <A-p> :BufferPin<CR>
+" Close buffer
+nnoremap <silent>    <A-c> :BufferClose<CR>
+luafile ~/.config/nvim/ntree-setup.lua

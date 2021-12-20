@@ -6,8 +6,8 @@ status is-login; and pyenv init --path | source
 status is-interactive; and pyenv init - | source
 pokemon-colorscripts -r
 
-set -x VISUAL "vim"
-set -x EDITOR "vim"
+set -x VISUAL "nvim"
+set -x EDITOR "nvim"
 set -x  MANPAGER "less -R --use-color -Dd+r -Du+b"
 function bind_bang
     switch (commandline -t)[-1]

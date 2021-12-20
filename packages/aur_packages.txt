@@ -11,7 +11,6 @@ neovim-plug
 nerd-fonts-meslo
 pfetch
 qdirstat
-system76-power
 tlauncher-bin
 vim-plug
 visual-studio-code-bin
