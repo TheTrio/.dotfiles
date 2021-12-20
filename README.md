@@ -2,7 +2,8 @@
 A repository containing all of my dot files
 
 # How it looks
-![](images/terminal.png)
+
+![](images/nvim.png)
 
 ![](images/code.png)
 
@@ -10,7 +11,7 @@ A repository containing all of my dot files
 
 # What it has
 
-Configuration of almost everything I use. Ranging from stuff like Vim and kitty, to ncspot and tldr. There's also an arch install script which helps me set up my environment on a new machine. 
+Configuration of almost everything I use. Ranging from stuff like Vim, neovim and kitty, to ncspot and tldr. There's also an arch install script which helps me set up my environment on a new machine. 
 
 # Why
 
