@@ -1,3 +1,4 @@
+" Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
@@ -9,13 +10,12 @@ Plug 'romgrk/barbar.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 call plug#end()
-set encoding=utf8
-set laststatus=2
+
+" theming stuff
+colorscheme onedark
 let g:lightline = {
   \ 'colorscheme': 'onedark',
   \ }
-set noshowmode
-syntax on
 if (has("autocmd") && !has("gui_running"))
   augroup colorset
     autocmd!
@@ -23,22 +23,35 @@ if (has("autocmd") && !has("gui_running"))
     autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
   augroup END
 endif
-
-colorscheme onedark
-set number
+" navigating between buffers - use the vim arrow keys
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-set expandtab
+
+" tab and spaces
 set tabstop=2
 set softtabstop=2
-cmap w!! w !sudo tee > /dev/null %
+set shiftwidth=2
+set expandtab
+set autoindent
+set copyindent
+
+" miscellaneous
+set termguicolors
+set noshowmode
+syntax on
+set encoding=utf8
+set laststatus=2
+set number
+
+" COC settings
 if has('nvim')
   inoremap <silent><expr> <c-space> coc#refresh()
 else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
+
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
@@ -53,13 +66,12 @@ command! -nargs=0 Format :call CocAction('format')
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 map <silent><expr> <c-f> :call CocAction('format')<CR>
-set termguicolors
+
+" N Tree keymapping
 nnoremap <silent>    <A-,> :BufferPrevious<CR>
 nnoremap <silent>    <A-.> :BufferNext<CR>
-" Re-order to previous/next
 nnoremap <silent>    <A-<> :BufferMovePrevious<CR>
 nnoremap <silent>    <A->> :BufferMoveNext<CR>
-" Goto buffer in position...
 nnoremap <silent>    <A-1> :BufferGoto 1<CR>
 nnoremap <silent>    <A-2> :BufferGoto 2<CR>
 nnoremap <silent>    <A-3> :BufferGoto 3<CR>
@@ -69,8 +81,8 @@ nnoremap <silent>    <A-6> :BufferGoto 6<CR>
 nnoremap <silent>    <A-7> :BufferGoto 7<CR>
 nnoremap <silent>    <A-8> :BufferGoto 8<CR>
 nnoremap <silent>    <A-9> :BufferLast<CR>
-" Pin/unpin buffer
 nnoremap <silent>    <A-p> :BufferPin<CR>
-" Close buffer
 nnoremap <silent>    <A-c> :BufferClose<CR>
+
+" Setting up NTree 
 luafile ~/.config/nvim/ntree-setup.lua

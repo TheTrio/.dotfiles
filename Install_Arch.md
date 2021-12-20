@@ -123,13 +123,13 @@ To disable, add `usbcore.autosuspend=-1` to the kernel parameters
 
 ## Suspend
 
-In true NVIDIA fashion, `systemctl suspend` doesn't work if you have Xorg running on the NVIDIA GPU. 
+In true NVIDIA fashion, `systemctl suspend` doesn't work if you have Xorg running on the NVIDIA GPU.
 
-To verify, type `nvidia-smi | grep -i xorg`. 
+To verify, type `nvidia-smi | grep -i xorg`.
 
-One way to solve would to run Xorg on your integrated GPU. I have faced issues doing that in the past, mostly relating to hardware acceleration. 
+One way to solve would to run Xorg on your integrated GPU. I have faced issues doing that in the past, mostly relating to hardware acceleration.
 
-Thus, the fix is to make sure the NVIDIA GPU powers down gracefully. 
+Thus, the fix is to make sure the NVIDIA GPU powers down gracefully.
 
 ```
 systemctl enable nvidia-suspend
@@ -137,13 +137,13 @@ systemctl enable nvidia-hibernate
 systemctl enable nvidia-resume
 ```
 
-I've also noticed that TLP makes suspend not work sometimes. Disabling it fixed the issue. 
+I've also noticed that TLP makes suspend not work sometimes. Disabling it fixed the issue.
 
 ## Hibernate
 
 Again, blame NVIDIA.
 
-Switching to the LTS Kernel should fix this issue, but presently I have been unable to find a perfect solution for the latest kernel. 
+Switching to the LTS Kernel should fix this issue, but presently I have been unable to find a perfect solution for the latest kernel.
 
 # Enabling hardware acceleration
 
@@ -219,23 +219,28 @@ pacman -Syu starship
 yay -Syu pokemon-colorscripts-git
 ```
 
-## Vim Plugins
+## Neovim
 
-The following plugins are installed by default
-
-1. [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)
-2. [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim)
-3. [preservim/nerdtree](https://github.com/preservim/nerdtree)
-4. [ryanoasis/vim-devicons](https://github.com/ryanoasis/vim-devicons)
-
-The Plugin manager I use is [Vim Plug](https://github.com/junegunn/vim-plug)
+I use Neovim mostly for quick edits but still have a lot of configuration options.
 
 ```
-yay -Syu vim-plug
-ln -sf $PWD/.vimrc ~/.vimrc
+pacman -Syu neovim
+yay -Syu neovim-plug
+ln -sf $PWD/.config/nvim/ ~/.config/
 ```
 
+Then install all the packages
 
+```
+:PlugInstall
+```
+
+Following which we need to setup the language servers
+
+```
+:CocInstall coc-pyright
+:CocInstall coc-css
+```
 
 # Development Environment
 
@@ -284,7 +289,7 @@ yay -Syu insomnia-bin
 pacman -Syu docker
 ```
 
-Docker slows down the boot process considerably, so I start the service before I use it rather than enabling it. 
+Docker slows down the boot process considerably, so I start the service before I use it rather than enabling it.
 
 # KVM
 
@@ -319,7 +324,7 @@ pacman -Syu discord
 
 Discord, or rather Chromium does have some issues with hardware acceleration by default so we have to manually enable some flags
 
-Add the following to the `discord.desktop` file. 
+Add the following to the `discord.desktop` file.
 
 ```
 Exec=/usr/bin/discord \
