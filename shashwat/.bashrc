@@ -115,7 +115,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$PATH:$HOME/.local/bin
+export PATH=$HOME/.local/bin:$PATH
  
 # Powerline configuration
 # export POWERLINE_PATH=$HOME/.local/lib/python3.8/site-packages/powerline
@@ -134,8 +134,6 @@ eval "$(starship init bash)"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PIPENV_VENV_IN_PROJECT=1
-export PATH="/home/shashwat/.local/bin:$PATH"
 alias ssh="kitty +kitten ssh"
 . "$HOME/.cargo/env"
 eval "$(pyenv init -)"
-

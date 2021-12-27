@@ -12,6 +12,7 @@ bluedevil
 bluez
 bluez-utils
 breeze-gtk
+cadence
 chromium
 cronie
 dbeaver
@@ -37,6 +38,7 @@ gnome-keyring
 gparted
 groff
 gwenview
+helvum
 htop
 iptables-nft
 jdk-openjdk
@@ -100,6 +102,7 @@ perl-http-message
 perl-io-html
 perl-lwp-mediatypes
 perl-uri
+pipewire-jack
 pipewire-pulse
 pkgconf
 plasma-browser-integration
@@ -122,7 +125,7 @@ python-more-itertools
 python-ordered-set
 python-packaging
 python-pip
-python-pipenv
+python-poetry
 python-pyparsing
 python-setuptools
 qalculate-qt
@@ -140,6 +143,7 @@ tmux
 ttf-dejavu
 ttf-jetbrains-mono
 ttf-liberation
+ttf-nerd-fonts-symbols
 ufw
 unzip
 vi
