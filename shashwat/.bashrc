@@ -115,8 +115,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$HOME/.local/bin:$PATH
- 
 # Powerline configuration
 # export POWERLINE_PATH=$HOME/.local/lib/python3.8/site-packages/powerline
 # if [ -f $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh ]; then

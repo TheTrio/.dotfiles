@@ -9,10 +9,11 @@ marktext-bin
 ncspot-bin
 neovim-plug
 nerd-fonts-meslo
+paru-bin
 pfetch
 qdirstat
 tlauncher-bin
+ventoy-bin
 vim-plug
 visual-studio-code-bin
 x11-emoji-picker-git
-yay

@@ -8,6 +8,7 @@ Plug 'raimondi/delimitmate'
 Plug 'romgrk/barbar.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'fladson/vim-kitty'
 call plug#end()
 set encoding=utf8
 set laststatus=2

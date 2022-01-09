@@ -1,6 +1,7 @@
 alacritty
 amd-ucode
 ark
+asciinema
 autoconf
 automake
 base
@@ -28,6 +29,7 @@ fakeroot
 fd
 firefox
 fish
+fisher
 flameshot
 flex
 gcc
@@ -51,6 +53,7 @@ khotkeys
 kinfocenter
 kitty
 kmix
+krita
 kscreen
 ksshaskpass
 kwallet-pam
@@ -116,6 +119,7 @@ plasma-systemmonitor
 plasma-thunderbolt
 plasma-vault
 plasma-workspace-wallpapers
+playerctl
 postgresql
 powerdevil
 progress
@@ -148,7 +152,6 @@ ufw
 unzip
 vi
 vim
-virtualbox
 vlc
 vulkan-radeon
 webkit2gtk
