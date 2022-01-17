@@ -44,6 +44,7 @@ helvum
 htop
 iptables-nft
 jdk-openjdk
+jp2a
 jq
 jre-openjdk
 kde-gtk-config
@@ -135,6 +136,7 @@ python-setuptools
 qalculate-qt
 qbittorrent
 r8168
+ranger
 solaar
 sshfs
 starship
@@ -169,3 +171,5 @@ xorg-xinput
 youtube-dl
 yt-dlp
 zsh
+zsh-autosuggestions
+zsh-syntax-highlighting

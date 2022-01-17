@@ -1,0 +1,22 @@
+[user]
+	email = 10794178+TheTrio@users.noreply.github.com 
+	name = Shashwat
+	signingkey = 7AB1222DEF4C9EF174A1F10DC8FF8827BF1F1535
+[advice]
+	pushNonFastForward = false
+[core]
+	sshCommand = ssh -i ~/.ssh/github -F /dev/null
+[commit]
+	gpgSign = true
+[init]
+	defaultBranch = main
+[diff]
+	tool = kitty
+	guitool = kitty.gui
+[difftool]
+	prompt = false
+	trustExitCode = true
+[difftool "kitty"]
+	cmd = kitty +kitten diff $LOCAL $REMOTE
+[difftool "kitty.gui"]
+	cmd = kitty kitty +kitten diff $LOCAL $REMOTE
