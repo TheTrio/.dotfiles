@@ -8,7 +8,6 @@ base
 bat
 binutils
 bison
-bitwarden
 bluedevil
 bluez
 bluez-utils
@@ -37,6 +36,7 @@ gimp
 git
 gnome-disk-utility
 gnome-keyring
+gnome-themes-extra
 gnu-netcat
 gparted
 groff
@@ -51,6 +51,7 @@ jq
 jre-openjdk
 kcolorchooser
 kde-gtk-config
+kdeconnect
 kdeplasma-addons
 kgamma5
 khotkeys
@@ -104,14 +105,8 @@ pdftk
 peek
 perl-clone
 perl-encode-locale
-perl-file-listing
-perl-html-parser
-perl-html-tagset
-perl-http-date
-perl-http-message
 perl-io-html
 perl-lwp-mediatypes
-perl-uri
 pipewire-jack
 pipewire-pulse
 pkgconf
@@ -144,6 +139,7 @@ qbittorrent
 r8168
 ranger
 redis
+sddm
 solaar
 sshfs
 starship
@@ -176,6 +172,7 @@ xdotool
 xf86-video-amdgpu
 xorg-server
 xorg-xev
+xorg-xeyes
 xorg-xinit
 xorg-xinput
 youtube-dl
