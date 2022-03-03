@@ -17,7 +17,6 @@ chromium
 cronie
 dbeaver
 dialog
-discord
 discover
 dnsmasq
 docker
@@ -30,6 +29,7 @@ fd
 firefox
 fish
 fisher
+flatpak
 flex
 gcc
 gimp
@@ -93,7 +93,6 @@ nvidia
 nvidia-lts
 nvidia-prime
 nvidia-settings
-obs-studio
 okular
 os-prober
 oxygen

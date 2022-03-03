@@ -16,7 +16,6 @@ nerd-fonts-meslo
 paru-bin
 pfetch
 qdirstat
-slack-desktop
 tlauncher-bin
 ventoy-bin
 vim-plug
