@@ -7,6 +7,8 @@ SETUVAR _fish_abbr_gb:git\x20branch
 SETUVAR _fish_abbr_gbl:git\x20blame
 SETUVAR _fish_abbr_gc:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_gca:git\x20commit\x20\x2d\x2damend\x20\x2dm
+SETUVAR _fish_abbr_gclean:git\x20branch\x20\x7c\x20grep\x20\x22\x2a\x22\x20\x2dv\x20\x7c\x20xargs\x20git\x20branch\x20\x2dd
+SETUVAR _fish_abbr_gcls:git\x20diff\x2dtree\x20\x2d\x2dno\x2dcommit\x2did\x20\x2d\x2dname\x2dstatus\x20\x2dr
 SETUVAR _fish_abbr_gco:git\x20checkout
 SETUVAR _fish_abbr_gcp:git\x20cherry\x2dpick
 SETUVAR _fish_abbr_gd:git\x20difftool

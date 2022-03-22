@@ -4,7 +4,6 @@ source ~/.bash_aliases
 export PIPENV_VENV_IN_PROJECT=1
 status is-login; and pyenv init --path | source
 status is-interactive; and pyenv init - | source
-pokemon-colorscripts -r
 
 set -x VISUAL "nvim"
 set -x EDITOR "nvim"
@@ -53,6 +52,8 @@ abbr grb 'git rebase'
 abbr gs 'git status'
 abbr gst 'git stash'
 abbr gsw 'git switch'
+abbr gcls 'git diff-tree --no-commit-id --name-status -r'
+abbr gclean 'git branch | grep "*" -v | xargs git branch -d'
 
 abbr xcopy 'xclip -sel copy'
 abbr nv 'nvim'
