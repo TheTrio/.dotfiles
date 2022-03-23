@@ -18,12 +18,11 @@ make_swap_file () {
   done=$((done+1))
 }
 
-install_yay () {
-  git clone https://aur.archlinux.org/yay.git
-  cd yay
+install_paru () {
+  sudo pacman -Syu --needed base-devel
+  git clone https://aur.archlinux.org/paru.git
+  cd paru
   makepkg -si
-  cd ..
-  rm -rf yay
   done=$((done+1))
 }
 
@@ -44,15 +43,7 @@ enable_bluetooth() {
 }
 
 setup_symlinks () {
-  ln -sf $PWD/.config/kitty ~/.config
-  ln -sf $PWD/.config/fish/config.fish ~/.config/fish/
-  ln -sf $PWD/shashwat/.bashrc ~/.bashrc
-  ln -sf $PWD/shashwat/.bash_aliases ~/.bash_aliases
-  ln -sf $PWD/.config/lsd ~/.config
-  ln -sf $PWD/.config/oh_my_posh ~/.config
-  ln -sf $PWD/shashwat/.vimrc ~/.vimrc
-  ln -sf $PWD/shashwat/.tldrc ~/.tldrc
-  ln -sf $PWD/.config/libinput-gestures.conf ~/.config
+  
   done=$((done+1))
 }
 
@@ -134,8 +125,8 @@ done=$((done+1))
 print_update "Making swap file(${done} of ${total})"
 make_swap_file
 
-print_update "Installing yay(${done} of ${total})"
-install_yay
+print_update "Installing paru(${done} of ${total})"
+install_paru
 
 print_update "Enabling graphics(${done} of ${total})"
 enable_sddm

@@ -29,15 +29,13 @@ swapon /swapfile
 echo "/swapfile none swap defaults 0 0" >> /etc/fstab
 ```
 
-## Installing Yay
+## Installing Paru
 
 ```
-pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
 makepkg -si
-cd ..
-rm -rf yay
 ```
 
 ## Install a Desktop Environment
@@ -322,18 +320,10 @@ yay -S ncspot
 pacman -Syu discord
 ```
 
-Discord, or rather Chromium does have some issues with hardware acceleration by default so we have to manually enable some flags
-
-Add the following to the `discord.desktop` file.
+The discord flatpak version seems easier to setup.
 
 ```
-Exec=/usr/bin/discord \
-  --ignore-gpu-blocklist \
-  --disable-features=UseOzonePlatform \
-  --enable-features=VaapiVideoDecoder \
-  --use-gl=desktop \
-  --enable-gpu-rasterization \
-  --enable-zero-copy
+flatpak install flathub com.discordapp.Discord
 ```
 
 ## Chromium
