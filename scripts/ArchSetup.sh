@@ -43,7 +43,7 @@ enable_bluetooth() {
 }
 
 setup_symlinks () {
-  
+  stow alacritty fish home kitty libinput lsd ncspot nvim starship
   done=$((done+1))
 }
 

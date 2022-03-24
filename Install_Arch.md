@@ -68,6 +68,16 @@ And then start the bluetooth service
 systemctl enable bluetooth --now
 ```
 
+## Configuration
+
+Simply run `stow <package_name>` to setup the symlinks.
+
+To configure everything, run
+
+```
+stow alacritty fish home kitty libinput lsd ncspot nvim starship
+```
+
 # Kernel
 
 ## Ethernet module
@@ -169,21 +179,12 @@ pacman -Syu nvidia nvidia-prime
 
 ```
 pacman -Syu kitty
-ln -sf $PWD/.config/kitty ~/.config
 ```
 
 ## Fish
 
 ```
 pacman -Syu fish fisher
-ln -sf $PWD/.config/fish/config.fish ~/.config/fish/
-```
-
-## Bash
-
-```
-ln -sf $PWD/.bashrc ~/.bashrc
-ln -sf $PWD/.bash_aliases ~/.bash_aliases
 ```
 
 ## Fonts
@@ -196,7 +197,6 @@ pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-jetbrains-mono
 
 ```
 pacman -Syu lsd
-ln -sf $PWD/.config/lsd ~/.config
 ```
 
 ## BAT
@@ -224,7 +224,6 @@ I use Neovim mostly for quick edits but still have a lot of configuration option
 ```
 pacman -Syu neovim
 yay -Syu neovim-plug
-ln -sf $PWD/.config/nvim/ ~/.config/
 ```
 
 Then install all the packages
@@ -316,10 +315,6 @@ yay -S ncspot
 
 ## Discord
 
-```
-pacman -Syu discord
-```
-
 The discord flatpak version seems easier to setup.
 
 ```
@@ -355,7 +350,6 @@ yay -Syu albert-bin
 
 ```
 yay -S libinput-gestures
-ln -sf $PWD/.config/libinput-gestures.conf ~/.config
 libinput-gestures-setup autostart start
 ```
 
