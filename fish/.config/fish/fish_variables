@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3100
+SETUVAR --export PYENV_ROOT:/home/shashwat/\x2epyenv
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gb:git\x20branch
@@ -57,6 +58,8 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_user_paths:/home/shashwat/\x2epyenv/bin
 SETUVAR nvm_data:/home/shashwat/\x2elocal/share/nvm
 SETUVAR nvm_default_version:v14
 SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist

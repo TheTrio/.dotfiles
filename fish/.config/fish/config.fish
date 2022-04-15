@@ -4,7 +4,6 @@ source ~/.bash_aliases
 export PIPENV_VENV_IN_PROJECT=1
 status is-login; and pyenv init --path | source
 status is-interactive; and pyenv init - | source
-
 set -x VISUAL "nvim"
 set -x EDITOR "nvim"
 set -x  MANPAGER "less -R --use-color -Dd+r -Du+b"
