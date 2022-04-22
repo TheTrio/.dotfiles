@@ -3,12 +3,11 @@ betterdiscordctl-git
 downgrade
 extramaus
 google-chrome
-gromit-mpx
 insomnia-bin
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
+kwin-bismuth
 libinput-gestures
-mongodb-bin
 mongodb-tools-bin
 ncspot-bin
 neovim-plug
@@ -16,6 +15,7 @@ nerd-fonts-meslo
 pandoc-bin
 paru-bin
 pfetch
+qbittorrent-qt5
 qdirstat
 ventoy-bin
 vim-plug

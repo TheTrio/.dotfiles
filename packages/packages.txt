@@ -30,13 +30,12 @@ fd
 firefox
 fish
 fisher
+flameshot
 flatpak
 flex
 gcc
-gimp
 git
 github-cli
-gnome-disk-utility
 gnome-keyring
 gnome-themes-extra
 gnu-netcat
@@ -63,8 +62,8 @@ kmix
 konsole
 krita
 kscreen
-ksnip
 ksshaskpass
+ktorrent
 kwallet-pam
 kwalletmanager
 kwayland-integration
@@ -135,7 +134,6 @@ python-poetry
 python-pyparsing
 python-setuptools
 qalculate-qt
-qbittorrent
 r8168
 ranger
 redis
