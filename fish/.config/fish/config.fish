@@ -7,6 +7,7 @@ status is-interactive; and pyenv init - | source
 set -x VISUAL "nvim"
 set -x EDITOR "nvim"
 set -x  MANPAGER "less -R --use-color -Dd+r -Du+b"
+set -gx GPG_TTY (tty)
 function bind_bang
     switch (commandline -t)[-1]
         case "!"
