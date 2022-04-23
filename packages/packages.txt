@@ -98,6 +98,7 @@ okular
 os-prober
 oxygen
 packagekit-qt5
+partitionmanager
 patch
 pavucontrol
 pdftk
