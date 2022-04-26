@@ -313,14 +313,6 @@ Having used `spotify-tui` for a while, ncspot seems easier to set up and use.
 yay -S ncspot
 ```
 
-## Discord
-
-The discord flatpak version seems easier to setup.
-
-```
-flatpak install flathub com.discordapp.Discord
-```
-
 ## Chromium
 
 Out of the box, chromium is almost impossible to use. The following flags fix a host of things
@@ -357,4 +349,12 @@ libinput-gestures-setup autostart start
 
 ```
 pacman -Syu firefox chromium
+```
+
+## Flatpak
+
+For certain applications, using flatpak is easier and safer.
+
+```
+cat packages/flatpak_packages.txt | xargs flatpak install
 ```
