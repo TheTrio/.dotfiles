@@ -1,0 +1,13 @@
+com.discordapp.Discord
+com.github.tchx84.Flatseal
+com.obsproject.Studio
+com.slack.Slack
+org.freedesktop.Platform
+org.freedesktop.Platform.GL.default
+org.freedesktop.Platform.GL.nvidia-510-60-02
+org.freedesktop.Platform.openh264
+org.gnome.Platform
+org.gtk.Gtk3theme.Breeze
+org.gtk.Gtk3theme.Breeze-Dark
+org.kde.Platform
+rest.insomnia.Insomnia

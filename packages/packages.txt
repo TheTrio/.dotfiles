@@ -30,7 +30,6 @@ fd
 firefox
 fish
 fisher
-flameshot
 flatpak
 flex
 gcc
@@ -62,12 +61,14 @@ kmix
 konsole
 krita
 kscreen
+ksnip
 ksshaskpass
 ktorrent
 kwallet-pam
 kwalletmanager
 kwayland-integration
 kwrited
+libreoffice-fresh
 libva-mesa-driver
 libvdpau-va-gl
 linux

@@ -3,7 +3,6 @@ betterdiscordctl-git
 downgrade
 extramaus
 google-chrome
-insomnia-bin
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
 kwin-bismuth
