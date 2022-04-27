@@ -52,6 +52,7 @@ jre-openjdk
 kate
 kcolorchooser
 kde-gtk-config
+kdeconnect
 kdeplasma-addons
 kgamma5
 khotkeys

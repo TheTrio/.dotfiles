@@ -5,6 +5,7 @@ extramaus
 google-chrome
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
+k4dirstat
 kwin-bismuth
 libinput-gestures
 mongodb-tools-bin
