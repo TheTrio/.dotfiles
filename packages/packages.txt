@@ -22,11 +22,13 @@ discover
 dnsmasq
 docker
 dolphin
+dotnet-sdk
 drkonqi
 duf
 efibootmgr
 fakeroot
 fd
+filelight
 firefox
 fish
 fisher
@@ -52,7 +54,6 @@ jre-openjdk
 kate
 kcolorchooser
 kde-gtk-config
-kdeconnect
 kdeplasma-addons
 kgamma5
 khotkeys
@@ -146,6 +147,7 @@ sshfs
 starship
 stow
 sudo
+sysstat
 telegram-desktop
 texinfo
 tk

@@ -3,6 +3,7 @@ betterdiscordctl-git
 downgrade
 extramaus
 google-chrome
+gromit-mpx
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
 k4dirstat
