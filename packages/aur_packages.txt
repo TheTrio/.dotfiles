@@ -13,6 +13,7 @@ mongodb-tools-bin
 ncspot-bin
 neovim-plug
 nerd-fonts-meslo
+pacfinder
 pandoc-bin
 paru-bin
 pfetch

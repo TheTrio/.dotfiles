@@ -58,3 +58,5 @@ abbr gclean 'git branch | grep "*" -v | xargs git branch -d'
 
 abbr xcopy 'xclip -sel copy'
 abbr nv 'nvim'
+
+abbr ls 'exa --group-directories-first --long --all  --icons --grid --header --git'
