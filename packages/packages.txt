@@ -25,7 +25,9 @@ dolphin
 dotnet-sdk
 drkonqi
 duf
+dust
 efibootmgr
+exa
 fakeroot
 fd
 filelight
@@ -41,6 +43,7 @@ gnome-keyring
 gnome-themes-extra
 gnu-netcat
 gparted
+gperftools
 groff
 gwenview
 helvum
@@ -60,6 +63,7 @@ khotkeys
 kinfocenter
 kitty
 kmix
+kolourpaint
 konsole
 krita
 kscreen
@@ -70,6 +74,7 @@ kwallet-pam
 kwalletmanager
 kwayland-integration
 kwrited
+lazygit
 libreoffice-fresh
 libva-mesa-driver
 libvdpau-va-gl
@@ -138,6 +143,7 @@ python-poetry
 python-pyparsing
 python-setuptools
 qalculate-qt
+qemu
 r8168
 ranger
 redis
@@ -148,6 +154,7 @@ starship
 stow
 sudo
 sysstat
+tealdeer
 telegram-desktop
 texinfo
 tk
@@ -161,9 +168,13 @@ ttf-nerd-fonts-symbols
 ufw
 unzip
 usbutils
+vde2
 vi
 vim
+virt-manager
+virt-viewer
 vlc
+vnstat
 vulkan-radeon
 webkit2gtk
 wget

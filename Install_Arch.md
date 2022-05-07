@@ -75,7 +75,7 @@ Simply run `stow <package_name>` to setup the symlinks.
 To configure everything, run
 
 ```
-stow alacritty fish home kitty libinput lsd ncspot nvim starship
+stow alacritty fish home kitty tldr libinput lsd ncspot nvim starship
 ```
 
 # Kernel
@@ -272,12 +272,6 @@ pyenv install 3.9
 ```
 fisher install jorgebucaran/nvm.fish
 nvm install 14
-```
-
-## Insomnia
-
-```
-yay -Syu insomnia-bin
 ```
 
 ## Docker

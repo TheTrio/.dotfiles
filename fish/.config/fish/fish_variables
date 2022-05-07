@@ -26,7 +26,8 @@ SETUVAR _fish_abbr_gre:git\x20reset
 SETUVAR _fish_abbr_gs:git\x20status
 SETUVAR _fish_abbr_gst:git\x20stash
 SETUVAR _fish_abbr_gsw:git\x20switch
-SETUVAR _fish_abbr_ls:exa\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x20\x2d\x2dlong\x20\x2d\x2dall\x20\x20\x2d\x2dicons\x20\x2d\x2dgrid\x20\x2d\x2dheader\x20\x2d\x2dgit
+SETUVAR _fish_abbr_lg:lazygit
+SETUVAR _fish_abbr_ls:exa\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x20\x2d\x2dlong\x20\x2d\x2dall\x20\x20\x2d\x2dicons\x20\x2d\x2dheader\x20\x2d\x2dgit
 SETUVAR _fish_abbr_nv:nvim
 SETUVAR _fish_abbr_xcopy:xclip\x20\x2dsel\x20copy
 SETUVAR _fisher_dracula_2F_fish_files:/home/shashwat/\x2econfig/fish/conf\x2ed/dracula\x2efish
