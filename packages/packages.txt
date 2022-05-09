@@ -81,7 +81,6 @@ libvdpau-va-gl
 linux
 linux-firmware
 linux-lts
-lolcat
 lsd
 m4
 make
@@ -143,7 +142,7 @@ python-poetry
 python-pyparsing
 python-setuptools
 qalculate-qt
-qemu
+qemu-desktop
 r8168
 ranger
 redis
