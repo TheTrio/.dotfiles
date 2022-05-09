@@ -60,4 +60,4 @@ abbr lg 'lazygit'
 abbr xcopy 'xclip -sel copy'
 abbr nv 'nvim'
 
-abbr ls 'exa --group-directories-first --long --all  --icons --header --git'
+abbr ls 'exa --group-directories-first --long --all --header --git'
