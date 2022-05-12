@@ -4,4 +4,3 @@ com.obsproject.Studio
 com.slack.Slack
 org.gtk.Gtk3theme.Breeze
 org.gtk.Gtk3theme.Breeze-Dark
-rest.insomnia.Insomnia
