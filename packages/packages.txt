@@ -178,6 +178,7 @@ vnstat
 vulkan-radeon
 webkit2gtk
 wget
+wireplumber
 wmctrl
 xclip
 xdg-desktop-portal

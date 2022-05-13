@@ -6,7 +6,4 @@ export EDITOR="$VISUAL"
 # enables color in man pages
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin"
-if [ -f ~/.bashrc ]; then
-        source ~/.bashrc
-fi
-eval "$(pyenv init --path)"
+export PATH="$PATH:$HOME/.rvm/bin"
