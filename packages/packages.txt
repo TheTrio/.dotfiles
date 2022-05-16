@@ -30,6 +30,7 @@ efibootmgr
 exa
 fakeroot
 fd
+ffmpegthumbs
 filelight
 firefox
 fish
@@ -129,7 +130,6 @@ plasma-thunderbolt
 plasma-vault
 plasma-workspace-wallpapers
 playerctl
-postgresql
 powerdevil
 progress
 pyenv
