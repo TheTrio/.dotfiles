@@ -3,6 +3,7 @@ appimagelauncher-git
 betterdiscordctl-git
 downgrade
 extramaus
+glmark2-git
 google-chrome
 gromit-mpx
 intellij-idea-ultimate-edition
@@ -20,8 +21,10 @@ paru-bin
 pfetch
 qbittorrent-qt5
 qdirstat
+system76-power
 ventoy-bin
 vim-plug
 visual-studio-code-bin
 x11-emoji-picker-git
 xiaomi-adb-fastboot-tools-bin
+zulip-desktop-bin
