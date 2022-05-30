@@ -70,7 +70,6 @@ krita
 kscreen
 ksnip
 ksshaskpass
-ktorrent
 kwallet-pam
 kwalletmanager
 kwayland-integration
@@ -128,6 +127,7 @@ plasma-sdk
 plasma-systemmonitor
 plasma-thunderbolt
 plasma-vault
+plasma-wayland-session
 plasma-workspace-wallpapers
 playerctl
 powerdevil
@@ -143,6 +143,7 @@ python-pyparsing
 python-setuptools
 qalculate-qt
 qemu-desktop
+qt6ct
 r8168
 ranger
 redis

@@ -1,0 +1,10 @@
+#TabsToolbar {
+  visibility: collapse !important;
+}
+#sidebar-header {
+  display: none;
+}
+
+.Tab[data-active] {
+  background-color: #392c6e;
+}

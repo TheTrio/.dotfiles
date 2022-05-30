@@ -1,6 +1,8 @@
 albert-bin
 appimagelauncher-git
 betterdiscordctl-git
+chaotic-keyring
+chaotic-mirrorlist
 downgrade
 extramaus
 glmark2-git

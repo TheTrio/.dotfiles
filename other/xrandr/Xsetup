@@ -1,0 +1,12 @@
+#!/bin/sh
+# This goes in /usr/share/sddm/scripts/Xsetup
+# Xsetup - run as root before the login dialog appears
+
+intern=eDP
+extern=HDMI-A-0
+
+if xrandr | grep "$extern disconnected"; then
+  xrandr --output "$extern" --off --output "$intern" --auto
+else
+  xrandr --output "$intern" --off --output "$extern" --auto --rate 74.99
+fi
