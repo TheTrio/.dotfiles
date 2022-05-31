@@ -61,3 +61,4 @@ abbr xcopy 'xclip -sel copy'
 abbr nv 'nvim'
 
 abbr ls 'exa --group-directories-first --long --all --header --git'
+set -g fish_greeting

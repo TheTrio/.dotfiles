@@ -187,6 +187,19 @@ pacman -Syu kitty
 pacman -Syu fish fisher
 ```
 
+### Plugins
+
+```fish
+fisher install jorgebucaran/nvm.fish
+fisher install dracula/fish
+```
+
+### RVM
+
+```fish
+curl -L --create-dirs -o ~/.config/fish/functions/rvm.fish https://raw.github.com/lunks/fish-nuggets/master/functions/rvm.fish
+```
+
 ## Fonts
 
 ```
@@ -265,13 +278,6 @@ And finally,
 ```
 pyenv install 3.10
 pyenv install 3.9
-```
-
-## Node
-
-```
-fisher install jorgebucaran/nvm.fish
-nvm install 14
 ```
 
 ## Docker
