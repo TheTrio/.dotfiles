@@ -8,8 +8,6 @@ extramaus
 glmark2-git
 google-chrome
 gromit-mpx
-intellij-idea-ultimate-edition
-intellij-idea-ultimate-edition-jre
 k4dirstat
 kwin-bismuth
 libinput-gestures

@@ -1,6 +1,7 @@
 alacritty
 amd-ucode
 android-tools
+arandr
 ark
 asciinema
 autoconf
@@ -73,6 +74,7 @@ ksshaskpass
 kwallet-pam
 kwalletmanager
 kwayland-integration
+kwayland-server
 kwrited
 lazygit
 libreoffice-fresh
@@ -143,11 +145,11 @@ python-pyparsing
 python-setuptools
 qalculate-qt
 qemu-desktop
-qt6ct
 r8168
 ranger
 redis
 sddm
+sddm-kcm
 solaar
 sshfs
 starship
