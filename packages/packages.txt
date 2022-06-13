@@ -13,8 +13,10 @@ bison
 bluedevil
 bluez
 bluez-utils
+bpython
 breeze-gtk
 btop
+chntpw
 chromium
 cronie
 dbeaver
@@ -39,6 +41,7 @@ fisher
 flatpak
 flex
 gcc
+gifski
 git
 github-cli
 gnome-keyring
@@ -59,6 +62,7 @@ jre-openjdk
 kate
 kcolorchooser
 kde-gtk-config
+kdeconnect
 kdeplasma-addons
 kgamma5
 khotkeys
@@ -99,6 +103,7 @@ neovim
 networkmanager
 noto-fonts-cjk
 noto-fonts-emoji
+ntfs-3g
 nvidia
 nvidia-lts
 nvidia-prime

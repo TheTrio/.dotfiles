@@ -22,6 +22,7 @@ pfetch
 qbittorrent-qt5
 qdirstat
 system76-power
+universal-android-debloater-bin
 ventoy-bin
 vim-plug
 visual-studio-code-bin
