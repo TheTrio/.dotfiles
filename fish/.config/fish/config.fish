@@ -63,3 +63,4 @@ abbr nv 'nvim'
 
 abbr ls 'exa --group-directories-first --long --all --header --git'
 set -g fish_greeting
+set -e RUBY_VERSION 

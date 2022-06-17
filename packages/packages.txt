@@ -41,7 +41,6 @@ fisher
 flatpak
 flex
 gcc
-gifski
 git
 github-cli
 gnome-keyring
@@ -78,7 +77,6 @@ ksshaskpass
 kwallet-pam
 kwalletmanager
 kwayland-integration
-kwayland-server
 kwrited
 lazygit
 libreoffice-fresh
@@ -134,7 +132,6 @@ plasma-sdk
 plasma-systemmonitor
 plasma-thunderbolt
 plasma-vault
-plasma-wayland-session
 plasma-workspace-wallpapers
 playerctl
 powerdevil
@@ -195,7 +192,6 @@ xdotool
 xf86-video-amdgpu
 xorg-server
 xorg-xev
-xorg-xeyes
 xorg-xinit
 xorg-xinput
 youtube-dl
