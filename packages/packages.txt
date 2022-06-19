@@ -20,6 +20,7 @@ chntpw
 chromium
 cronie
 dbeaver
+debuginfod
 dialog
 discover
 dnsmasq
@@ -29,6 +30,7 @@ dotnet-sdk
 drkonqi
 duf
 dust
+easyeffects
 efibootmgr
 exa
 fakeroot
@@ -132,6 +134,7 @@ plasma-sdk
 plasma-systemmonitor
 plasma-thunderbolt
 plasma-vault
+plasma-wayland-session
 plasma-workspace-wallpapers
 playerctl
 powerdevil

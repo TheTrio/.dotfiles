@@ -16,12 +16,7 @@ install_packages () {
 print_update "Installing AUR packages"
 
 install_aur_packages () {
-  len=${#aur_packages[@]}
-  for package in "${aur_packages[@]}";do
-    printf "${Yellow}Installing ${package}. ${Blue}(${i}/${len})\n${Color_Off}"
-    yay -S --needed --noconfirm --removemake --nodiffmenu $package
-    i=$((i+1))
-  done
+  paru -S --needed --noconfirm - < "$SCRIPT_DIR/../packages/aur_packages.txt"
 }
 
 printf "${Blue}Installed all packages successfully\n"
