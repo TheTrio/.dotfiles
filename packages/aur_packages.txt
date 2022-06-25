@@ -1,5 +1,5 @@
+act
 albert-bin
-appimagelauncher-git
 betterdiscordctl-git
 downgrade
 extramaus

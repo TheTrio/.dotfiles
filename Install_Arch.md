@@ -50,6 +50,22 @@ pacman -Syu xorg-server plasma
 systemctl enable NetworkManager --now
 ```
 
+## Setting up a firewall
+
+I use [`ufw`](https://wiki.archlinux.org/title/Uncomplicated_Firewall).
+
+```
+pacman -Syu ufw
+systemctl enable ufw --now
+ufw default deny
+ufw allow 1714:1764/udp
+ufw allow 1714:1764/tcp
+ufw allow qBittorrent
+ufw reload
+```
+
+The rules for ports 1714 to 1764 are for making sure [KDE Connect](https://userbase.kde.org/KDEConnect#I_have_two_devices_running_KDE_Connect_on_the_same_network.2C_but_they_can.27t_see_each_other) works.
+
 ## Installing Bluetooth
 
 ```
