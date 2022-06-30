@@ -195,6 +195,7 @@ xdotool
 xf86-video-amdgpu
 xorg-server
 xorg-xev
+xorg-xeyes
 xorg-xinit
 xorg-xinput
 youtube-dl
