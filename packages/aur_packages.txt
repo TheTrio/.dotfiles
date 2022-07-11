@@ -1,4 +1,3 @@
-act
 albert-bin
 betterdiscordctl-git
 downgrade
@@ -18,7 +17,6 @@ pandoc-bin
 paru-bin
 pfetch
 qbittorrent-qt5
-qdirstat
 universal-android-debloater-bin
 ventoy-bin
 vim-plug

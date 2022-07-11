@@ -55,6 +55,7 @@ gwenview
 helvum
 htop
 httpie
+inetutils
 iptables-nft
 java-openjfx
 jdk-openjdk
@@ -94,6 +95,7 @@ make
 man-db
 man-pages
 mariadb
+memcached
 mesa-demos
 mesa-utils
 mesa-vdpau
