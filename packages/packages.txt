@@ -73,7 +73,6 @@ kinfocenter
 kitty
 kmix
 kolourpaint
-konsole
 krita
 kscreen
 ksnip
