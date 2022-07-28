@@ -75,7 +75,6 @@ kmix
 kolourpaint
 krita
 kscreen
-ksnip
 ksshaskpass
 kwallet-pam
 kwalletmanager
@@ -98,7 +97,6 @@ memcached
 mesa-demos
 mesa-utils
 mesa-vdpau
-mpv
 nano
 ncdu
 neovim
@@ -138,6 +136,7 @@ plasma-vault
 plasma-wayland-session
 plasma-workspace-wallpapers
 playerctl
+postgresql
 powerdevil
 progress
 pyenv
@@ -157,6 +156,7 @@ redis
 sddm
 sddm-kcm
 solaar
+spectacle
 sshfs
 starship
 stow

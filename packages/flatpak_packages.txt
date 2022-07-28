@@ -1,8 +1,4 @@
-com.discordapp.Discord
 com.github.tchx84.Flatseal
 com.obsproject.Studio
-com.slack.Slack
-org.audacityteam.Audacity
-org.audacityteam.Audacity.Codecs
 org.gtk.Gtk3theme.Breeze
 org.gtk.Gtk3theme.Breeze-Dark

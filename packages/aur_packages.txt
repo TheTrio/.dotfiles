@@ -17,6 +17,7 @@ pandoc-bin
 paru-bin
 pfetch
 qbittorrent-qt5
+slack-desktop
 universal-android-debloater-bin
 ventoy-bin
 vim-plug
