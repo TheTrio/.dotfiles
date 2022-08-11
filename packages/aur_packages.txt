@@ -17,11 +17,13 @@ pandoc-bin
 paru-bin
 pfetch
 qbittorrent-qt5
+sddm-git
 slack-desktop
 universal-android-debloater-bin
 ventoy-bin
 vim-plug
 visual-studio-code-bin
+webcord-bin
 x11-emoji-picker-git
 xiaomi-adb-fastboot-tools-bin
 zulip-desktop-bin

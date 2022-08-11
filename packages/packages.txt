@@ -88,6 +88,7 @@ linux
 linux-firmware
 linux-lts
 lsd
+lxappearance
 m4
 make
 man-db
@@ -153,7 +154,6 @@ qemu-desktop
 r8168
 ranger
 redis
-sddm
 sddm-kcm
 solaar
 spectacle
