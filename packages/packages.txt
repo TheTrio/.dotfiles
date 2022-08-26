@@ -57,6 +57,7 @@ htop
 httpie
 inetutils
 iptables-nft
+ipython
 java-openjfx
 jdk-openjdk
 jp2a
@@ -151,12 +152,12 @@ python-pyparsing
 python-setuptools
 qalculate-qt
 qemu-desktop
-r8168
 ranger
 redis
 sddm-kcm
 solaar
 spectacle
+speedtest-cli
 sshfs
 starship
 stow

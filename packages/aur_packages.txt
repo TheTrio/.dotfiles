@@ -5,6 +5,7 @@ extramaus
 glmark2-git
 google-chrome
 gromit-mpx
+icu69-bin
 k4dirstat
 kwin-bismuth
 libinput-gestures
