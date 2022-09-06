@@ -1,5 +1,7 @@
 # oh-my-posh --init --shell fish --config /home/shashwat/.poshthemes/tonybaloney.omp.json | source
 starship init fish | source
+string match -q "$TERM_PROGRAM" "vscode"
+and . (code --locate-shell-integration-path fish)
 source ~/.bash_aliases
 export PIPENV_VENV_IN_PROJECT=1
 status is-login; and pyenv init --path | source
