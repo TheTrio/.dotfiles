@@ -48,6 +48,7 @@ github-cli
 gnome-keyring
 gnome-themes-extra
 gnu-netcat
+go
 gparted
 gperftools
 groff
