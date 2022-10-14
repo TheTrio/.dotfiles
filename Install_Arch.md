@@ -268,7 +268,7 @@ Following which we need to setup the language servers
 
 ```bash
 pacman -Syu gnome-keyring
-yay -S visual-studio-code-bin
+yay -S visual-studio-code-bin icu69-bin
 ```
 
 ### pyenv
