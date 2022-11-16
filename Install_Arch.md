@@ -175,6 +175,8 @@ Switching to the LTS Kernel should fix this issue, but presently I have been una
 pacman -Syu xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau mesa
 ```
 
+With firefox, follow the [Arch Wiki guide](https://wiki.archlinux.org/title/Firefox#Hardware_video_acceleration)
+
 ## GPU drivers
 
 Run the following to get the current drivers
