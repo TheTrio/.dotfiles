@@ -61,6 +61,7 @@ abbr glo 'git log --oneline'
 
 abbr lg 'lazygit'
 abbr xcopy 'xclip -sel copy'
+abbr clip 'wl-copy'
 abbr nv 'nvim'
 
 abbr status 'systemctl status'
