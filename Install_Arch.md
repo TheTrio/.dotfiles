@@ -2,6 +2,8 @@
 
 Just so that I can copy paste commands while trying to set up a new device. A lot of this stuff is automated by the install script, but I still try and keep this detailed so that if and when the script does fail, I can manually setup everything.
 
+This guide gets outdated pretty fast given I experiment a lot with my setup, so things might not work as expected.
+
 ## Initial Setup
 
 ### Basic packages

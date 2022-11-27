@@ -1,7 +1,6 @@
 albert-bin
 cint
 extramaus
-glmark2-git
 k4dirstat
 mongodb-tools-bin
 ncspot-bin
@@ -12,6 +11,5 @@ paru-bin
 universal-android-debloater-bin
 vim-plug
 webcord-bin
-x11-emoji-picker-git
 xiaomi-adb-fastboot-tools-bin
 zulip-desktop-bin

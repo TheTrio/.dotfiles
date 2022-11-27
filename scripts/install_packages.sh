@@ -5,18 +5,23 @@ mapfile -t aur_packages < "$SCRIPT_DIR/../packages/aur_packages.txt"
 
 source "$SCRIPT_DIR/formatting.sh"
 
-print_update "Installing pacman packages"
-
 
 install_packages () {
   sudo pacman -S --needed --noconfirm - < "$SCRIPT_DIR/../packages/packages.txt"
 }
 
-
-print_update "Installing AUR packages"
-
 install_aur_packages () {
   paru -S --needed --noconfirm - < "$SCRIPT_DIR/../packages/aur_packages.txt"
 }
 
-printf "${Blue}Installed all packages successfully\n"
+
+install_flatpak_packages () {
+  cat packages/flatpak_packages.txt | xargs flatpak install
+}
+
+if [ "$1" = "yes" ]; then
+  install_packages
+  install_aur_packages
+  install_flatpak_packages
+  printf "${Blue}Installed all packages successfully\n"
+fi
