@@ -58,6 +58,7 @@ abbr gsw 'git switch'
 abbr gcls 'git diff-tree --no-commit-id --name-status -r'
 abbr gclean 'git branch | grep "*" -v | xargs git branch -d'
 abbr glo 'git log --oneline'
+abbr pacclean 'sudo pacman -Rsunc $(pacman -Qdtq)'
 
 abbr lg 'lazygit'
 abbr xcopy 'xclip -sel copy'
