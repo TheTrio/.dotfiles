@@ -4,6 +4,7 @@ android-tools
 arandr
 ark
 asciinema
+auto-cpufreq
 autoconf
 automake
 base
@@ -63,6 +64,7 @@ graphviz
 groff
 gromit-mpx
 gwenview
+helix
 helvum
 htop
 httpie
@@ -120,6 +122,7 @@ nano
 ncdu
 neovim
 neovim-plug
+net-tools
 networkmanager
 nodejs-nativefier
 noto-fonts-cjk
@@ -194,13 +197,13 @@ telegram-desktop
 texinfo
 tk
 tmux
+tor
 tree
 ttf-cascadia-code
 ttf-dejavu
 ttf-inconsolata
 ttf-jetbrains-mono
 ttf-liberation
-ttf-nerd-fonts-symbols-2048-em
 ufw
 unzip
 usbutils

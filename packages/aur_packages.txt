@@ -3,8 +3,7 @@ cint
 extramaus
 k4dirstat
 mongodb-tools-bin
-ncspot-bin
-nerd-fonts-meslo
+mpris-proxy-service
 pacfinder
 pandoc-bin
 paru-bin
