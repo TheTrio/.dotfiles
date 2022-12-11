@@ -48,6 +48,13 @@ return {
       mods = 'SHIFT|CTRL',
       action = wezterm.action.SpawnWindow
     },
+    {
+      key = 'c',
+      mods = 'CTRL|ALT',
+      action = wezterm.action.SpawnCommandInNewWindow {
+        args = { 'code', '.' },
+      },
+    },
   },
   hyperlink_rules = {
     -- Linkify things that look like URLs and the host has a TLD name.
