@@ -71,3 +71,6 @@ abbr sstop 'sudo systemctl stop'
 abbr ls 'exa --group-directories-first --long --all --header --git --icons'
 set -g fish_greeting
 set -e RUBY_VERSION 
+
+mcfly init fish | source
+set -gx MCFLY_FUZZY 2

@@ -86,6 +86,12 @@ And then start the bluetooth service
 systemctl enable bluetooth --now
 ```
 
+In order to make the touch controls to work on Sony headphones, install `mpris-proxy-service` [from the aur](https://wiki.archlinux.org/title/MPRIS).
+
+```bash
+paru -Syu mpris-proxy-service
+```
+
 ## Configuration
 
 Simply run `stow <package_name>` to setup the symlinks.
@@ -195,10 +201,10 @@ pacman -Syu nvidia nvidia-prime
 
 ## Terminal
 
-### Kitty
+### Terminal Emulators
 
 ```bash
-pacman -Syu kitty
+pacman -Syu wezterm kitty
 ```
 
 ### Fish
