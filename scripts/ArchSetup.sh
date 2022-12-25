@@ -118,6 +118,7 @@ cd .dotfiles
 t=("vim" "kitty")
 
 print_update "Installing Pacman Packages(${done} of ${total})"
+source "$SCRIPT_DIR/chaotic.sh"
 install_packages # imported
 
 done=$((done+1))

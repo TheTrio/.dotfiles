@@ -43,7 +43,7 @@ makepkg -si
 ### Install a Desktop Environment
 
 ```bash
-pacman -Syu xorg-server plasma
+pacman -Syu xorg-server plasma plasma-wayland-session
 ```
 
 ### Enable Network Manager
