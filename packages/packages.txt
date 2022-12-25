@@ -2,8 +2,10 @@ alacritty
 amd-ucode
 android-tools
 arandr
+arch-install-scripts
 ark
 asciinema
+audacity
 auto-cpufreq
 autoconf
 automake
@@ -12,6 +14,7 @@ bat
 betterdiscordctl-git
 binutils
 bison
+bitwarden
 bluedevil
 bluez
 bluez-utils
@@ -63,12 +66,14 @@ gperftools
 graphviz
 groff
 gromit-mpx
+gvfs
 gwenview
 helix
 helvum
 htop
 httpie
 icu69-bin
+imagemagick
 inetutils
 iptables-nft
 ipython
@@ -82,6 +87,7 @@ kcolorchooser
 kde-gtk-config
 kdeconnect
 kdeplasma-addons
+kdiskmark
 kgamma5
 khotkeys
 kinfocenter
@@ -113,6 +119,7 @@ make
 man-db
 man-pages
 mariadb
+mcfly
 memcached
 mesa-demos
 mesa-utils
@@ -180,6 +187,7 @@ qemu-desktop
 ranger
 redis
 rsync
+rtmpdump
 sddm-git
 sddm-kcm
 slack-desktop
@@ -233,7 +241,7 @@ xorg-xev
 xorg-xeyes
 xorg-xinit
 xorg-xinput
-youtube-dl
+yelp
 yt-dlp
 zsh
 zsh-autosuggestions
