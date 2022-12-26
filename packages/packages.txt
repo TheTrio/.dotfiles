@@ -56,6 +56,7 @@ gcc
 git
 git-delta
 github-cli
+gnome-disk-utility
 gnome-keyring
 gnome-themes-extra
 gnu-netcat
@@ -97,7 +98,6 @@ kolourpaint
 krita
 kscreen
 ksshaskpass
-kvantum
 kwallet-pam
 kwalletmanager
 kwayland-integration
@@ -140,7 +140,6 @@ nvidia-lts
 nvidia-prime
 nvidia-settings
 okular
-openboard
 os-prober
 oxygen
 partitionmanager
@@ -172,6 +171,7 @@ playerctl
 postgresql
 powerdevil
 progress
+pv
 pyenv
 python-appdirs
 python-more-itertools

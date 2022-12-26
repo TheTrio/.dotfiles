@@ -12,7 +12,6 @@ return {
   font = wezterm.font('JetBrains Mono'),
   default_prog = { '/usr/bin/fish', '-l' },
   adjust_window_size_when_changing_font_size = false,
-  window_decorations = "NONE",
 
   colors = {
     cursor_bg = '#E84A72',
