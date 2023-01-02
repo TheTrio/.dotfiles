@@ -26,6 +26,8 @@ chaotic-keyring
 chaotic-mirrorlist
 chntpw
 chromium
+cloc
+cpu-x
 cronie
 dbeaver
 debuginfod
@@ -76,6 +78,7 @@ httpie
 icu69-bin
 imagemagick
 inetutils
+input-remapper-git
 iptables-nft
 ipython
 java-openjfx
@@ -139,12 +142,14 @@ nvidia
 nvidia-lts
 nvidia-prime
 nvidia-settings
+ocs-url
 okular
 os-prober
 oxygen
 partitionmanager
 patch
 pavucontrol
+pdfarranger
 pdftk
 peek
 perl-clone
@@ -152,6 +157,7 @@ perl-encode-locale
 perl-io-html
 perl-lwp-mediatypes
 pfetch
+piper
 pipewire-jack
 pipewire-pulse
 pkgconf
@@ -190,7 +196,7 @@ rsync
 rtmpdump
 sddm-git
 sddm-kcm
-slack-desktop
+slack-electron
 solaar
 spectacle
 speedtest-cli
@@ -198,11 +204,13 @@ spotify
 sshfs
 starship
 stow
+stress
 sudo
 sysstat
 tealdeer
 telegram-desktop
 texinfo
+thunar
 tk
 tmux
 tor

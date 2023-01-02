@@ -1,4 +1,3 @@
-cint
 extramaus
 k4dirstat
 mongodb-tools-bin

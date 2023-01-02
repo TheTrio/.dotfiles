@@ -9,7 +9,8 @@ function make_mouse_binding(dir, streak, button, mods, action)
 end
 
 return {
-  font = wezterm.font('JetBrains Mono'),
+  font = wezterm.font('Cascadia Code PL'),
+  font_size = 13,
   default_prog = { '/usr/bin/fish', '-l' },
   adjust_window_size_when_changing_font_size = false,
 
@@ -40,7 +41,7 @@ return {
   },
 
   hide_tab_bar_if_only_one_tab = true,
-  window_background_opacity = 0.85,
+  window_background_opacity = 0.95,
   animation_fps = 20,
   default_cursor_style = 'SteadyBlock',
   enable_wayland = true,
