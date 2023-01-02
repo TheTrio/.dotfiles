@@ -71,6 +71,7 @@ groff
 gromit-mpx
 gvfs
 gwenview
+hardinfo
 helix
 helvum
 htop
@@ -114,6 +115,7 @@ libvdpau-va-gl
 linux
 linux-firmware
 linux-lts
+logiops
 lsd
 lshw
 lxappearance
@@ -197,7 +199,6 @@ rtmpdump
 sddm-git
 sddm-kcm
 slack-electron
-solaar
 spectacle
 speedtest-cli
 spotify
