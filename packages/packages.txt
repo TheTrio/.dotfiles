@@ -15,7 +15,6 @@ betterdiscordctl-git
 binutils
 bison
 bitwarden
-bitwarden-cli
 bluedevil
 bluez
 bluez-utils
@@ -198,7 +197,7 @@ rsync
 rtmpdump
 sddm-git
 sddm-kcm
-slack-electron
+slack-desktop
 spectacle
 speedtest-cli
 spotify
