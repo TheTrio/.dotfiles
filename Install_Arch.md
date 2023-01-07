@@ -281,6 +281,14 @@ pacman -Syu gnome-keyring
 yay -S visual-studio-code-bin icu69-bin
 ```
 
+### Window Tiling
+
+I keep this ignore list around to make sure that I don't accidentally tile a window that I don't want to.
+
+```text
+systemsettings,xdg-desktop-portal-kde,org.freedesktop.impl.portal.desktop.kde,org.kde.polkit-kde-authentication-agent-1
+```
+
 ### pyenv
 
 ```bash
@@ -352,29 +360,9 @@ Add the following to `.config/chromium-flags.conf`
 --profile-directory="Default"
 ```
 
-### Albert
-
-```bash
-yay -Syu albert-bin
-```
-
 ### libinput gestures
 
 ```bash
 yay -S libinput-gestures
 libinput-gestures-setup autostart start
-```
-
-### Web browsers
-
-```bash
-pacman -Syu firefox chromium
-```
-
-## Flatpak
-
-For certain applications, using flatpak is easier and safer.
-
-```bash
-cat packages/flatpak_packages.txt | xargs flatpak install
 ```
