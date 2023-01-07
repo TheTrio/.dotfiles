@@ -15,6 +15,7 @@ betterdiscordctl-git
 binutils
 bison
 bitwarden
+bitwarden-cli
 bluedevil
 bluez
 bluez-utils
@@ -136,7 +137,6 @@ neovim
 neovim-plug
 net-tools
 networkmanager
-nodejs-nativefier
 noto-fonts-cjk
 noto-fonts-emoji
 ntfs-3g

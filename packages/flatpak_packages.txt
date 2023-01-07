@@ -1,3 +1,4 @@
+com.github.rajsolai.textsnatcher
 com.github.tchx84.Flatseal
 com.obsproject.Studio
 org.gtk.Gtk3theme.Breeze
