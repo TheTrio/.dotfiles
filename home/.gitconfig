@@ -4,8 +4,6 @@
 	signingkey = D832A282A5B2D7F0AE4AD2ABC8C0F67B133E6B15
 [advice]
 	pushNonFastForward = false
-[core]
-	sshCommand = ssh -i ~/.ssh/github -F /dev/null
 [commit]
 	gpgSign = true
 [init]
