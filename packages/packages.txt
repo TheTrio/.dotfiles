@@ -22,11 +22,13 @@ bpython
 brave-bin
 breeze-gtk
 btop
+calibre
 chaotic-keyring
 chaotic-mirrorlist
 chntpw
 chromium
 cloc
+colord-kde
 cpu-x
 cronie
 dbeaver
@@ -35,6 +37,7 @@ dialog
 discover
 dnsmasq
 docker
+docker-compose
 dolphin
 dotnet-sdk
 downgrade
@@ -54,7 +57,9 @@ fish
 fisher
 flatpak
 flex
+foliate
 gcc
+ghostwriter
 git
 git-delta
 github-cli
@@ -99,6 +104,7 @@ kinfocenter
 kitty
 kmix
 kolourpaint
+kooha
 krita
 kscreen
 ksshaskpass
@@ -158,6 +164,7 @@ perl-encode-locale
 perl-io-html
 perl-lwp-mediatypes
 pfetch
+phoronix-test-suite
 piper
 pipewire-jack
 pipewire-pulse
@@ -192,6 +199,7 @@ qalculate-qt
 qbittorrent-qt5
 qemu-desktop
 ranger
+rclone
 redis
 rsync
 rtmpdump
@@ -213,7 +221,7 @@ texinfo
 thunar
 tk
 tmux
-tor
+tor-browser
 tree
 ttf-cascadia-code
 ttf-dejavu
@@ -233,6 +241,8 @@ visual-studio-code-bin
 vlc
 vnstat
 vulkan-radeon
+wasm-pack
+wavemon
 webkit2gtk
 wezterm
 wget
