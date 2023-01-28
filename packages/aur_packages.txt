@@ -1,7 +1,6 @@
 extramaus
 k4dirstat
 mongodb-tools-bin
-mpris-proxy-service
 pacfinder
 pandoc-bin
 paru-bin
