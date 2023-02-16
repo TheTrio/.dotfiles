@@ -24,7 +24,5 @@ fi
 
 # makes firefox respect my default file manager
 export GTK_USE_PORTAL=1
-# same but for telegram
-export QT_QPA_PLATFORMTHEME=flatpak
 cd
 
