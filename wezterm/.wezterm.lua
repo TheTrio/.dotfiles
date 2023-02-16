@@ -11,6 +11,8 @@ end
 return {
   font = wezterm.font('Cascadia Code PL'),
   font_size = 13,
+  initial_cols = 130,
+  initial_rows = 35,
   default_prog = { '/usr/bin/fish', '-l' },
   adjust_window_size_when_changing_font_size = false,
 
