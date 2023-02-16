@@ -99,7 +99,7 @@ Simply run `stow <package_name>` to setup the symlinks.
 To configure everything, run
 
 ```bash
-stow alacritty fish home kitty tldr libinput lsd ncspot nvim starship mpris
+stow alacritty fish home kitty tldr lsd nvim starship mpris wezterm
 ```
 
 ## Kernel
