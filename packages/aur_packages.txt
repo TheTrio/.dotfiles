@@ -10,10 +10,10 @@ hardinfo
 icu69-bin
 input-remapper-git
 k4dirstat
-kwin-bismuth
 libinput-gestures
 logiops
 microsoft-edge-stable-bin
+mongodb-bin
 mongodb-tools-bin
 neovim-plug
 ocs-url

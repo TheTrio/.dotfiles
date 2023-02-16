@@ -177,6 +177,7 @@ python-pyparsing
 python-setuptools
 qalculate-qt
 qemu-desktop
+qpwgraph
 ranger
 rclone
 redis
