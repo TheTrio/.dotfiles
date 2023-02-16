@@ -34,7 +34,7 @@ abbr status 'systemctl status'
 abbr sstart 'sudo systemctl start'
 abbr sstop 'sudo systemctl stop'
 
-if [ $TERM_PROGRAM != "vscode" ]
+if [ "$TERM_PROGRAM" != "vscode" ]
   abbr ls 'exa --group-directories-first --long --all --header --git --icons'
 else
   abbr ls 'exa --group-directories-first --long --all --header --git'
