@@ -115,7 +115,6 @@ make
 man-db
 man-pages
 mariadb
-mcfly
 memcached
 mesa-demos
 mesa-utils
@@ -140,7 +139,6 @@ patch
 pavucontrol
 pdfarranger
 pdftk
-peek
 perl-clone
 perl-encode-locale
 perl-io-html
@@ -220,6 +218,7 @@ wavemon
 webkit2gtk
 wezterm
 wget
+which
 wireplumber
 wl-clipboard
 wmctrl
