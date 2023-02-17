@@ -16,7 +16,4 @@ set -gx TERM "xterm-256color"
 set -g fish_greeting
 set -e RUBY_VERSION
 
-mcfly init fish | source
-set -gx MCFLY_FUZZY 2
-
 set -gx PIPENV_VENV_IN_PROJECT 1

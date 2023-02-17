@@ -21,7 +21,7 @@ abbr gst 'git stash'
 abbr gsw 'git switch'
 abbr gcls 'git diff-tree --no-commit-id --name-status -r'
 abbr gclean 'git branch | grep "*" -v | xargs git branch -d'
-abbr glo 'git log --oneline'
+abbr glo 'git log --oneline --no-merges'
 abbr pacclean 'sudo pacman -Rsunc $(pacman -Qdtq)'
 abbr gpu 'git pull upstream'
 
