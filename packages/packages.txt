@@ -49,6 +49,7 @@ firefox-developer-edition
 fish
 fisher
 flatpak
+flatpak-kcm
 flex
 foliate
 gcc
