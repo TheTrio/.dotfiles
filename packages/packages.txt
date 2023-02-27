@@ -12,7 +12,6 @@ base
 bat
 binutils
 bison
-bitwarden
 bluedevil
 bluez
 bluez-utils
@@ -180,6 +179,7 @@ qpwgraph
 ranger
 rclone
 redis
+ripgrep
 rsync
 rtmpdump
 sddm-kcm
@@ -195,6 +195,7 @@ tealdeer
 telegram-desktop
 texinfo
 thunar
+time
 tk
 tmux
 tree

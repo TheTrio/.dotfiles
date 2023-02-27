@@ -10,7 +10,6 @@ hardinfo
 icu69-bin
 input-remapper-git
 k4dirstat
-libinput-gestures
 logiops
 microsoft-edge-stable-bin
 mongodb-bin

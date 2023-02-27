@@ -1,3 +1,4 @@
+com.bitwarden.desktop
 com.github.rajsolai.textsnatcher
 com.obsproject.Studio
 org.gnome.Evince
