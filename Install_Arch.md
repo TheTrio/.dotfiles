@@ -99,7 +99,7 @@ Simply run `stow <package_name>` to setup the symlinks.
 To configure everything, run
 
 ```bash
-stow alacritty fish home kitty tldr lsd nvim starship mpris wezterm
+stow alacritty fish home kitty tldr lsd nvim starship mpris wezterm asdf
 ```
 
 ## Kernel
@@ -216,14 +216,7 @@ pacman -Syu fish fisher
 #### Plugins
 
 ```fish
-fisher install jorgebucaran/nvm.fish
 fisher install dracula/fish
-```
-
-### RVM
-
-```fish
-curl -L --create-dirs -o ~/.config/fish/functions/rvm.fish https://raw.github.com/lunks/fish-nuggets/master/functions/rvm.fish
 ```
 
 ### Fonts
