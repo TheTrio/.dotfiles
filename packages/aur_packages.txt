@@ -1,5 +1,4 @@
 auto-cpufreq
-betterdiscordctl-git
 brave-bin
 cpu-x
 downgrade
@@ -25,6 +24,7 @@ qbittorrent-qt5
 sddm-git
 slack-desktop
 spotify
+standardnotes-bin
 tor-browser
 universal-android-debloater-bin
 ventoy-bin
