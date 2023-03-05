@@ -101,7 +101,7 @@ kwalletmanager
 kwayland-integration
 kwrited
 lazygit
-libreoffice-fresh
+libreoffice-still
 libva-mesa-driver
 libvdpau-va-gl
 linux
