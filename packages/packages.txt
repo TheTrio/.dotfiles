@@ -93,6 +93,7 @@ kinfocenter
 kitty
 kmix
 kolourpaint
+kooha
 krita
 kscreen
 ksshaskpass
@@ -112,6 +113,7 @@ lshw
 lxappearance
 m4
 make
+malcontent
 man-db
 man-pages
 mariadb

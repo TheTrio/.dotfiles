@@ -30,6 +30,7 @@ universal-android-debloater-bin
 ventoy-bin
 vim-plug
 visual-studio-code-bin
+wayfarer
 webcord-bin
 xiaomi-adb-fastboot-tools-bin
 zulip-desktop-bin
