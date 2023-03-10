@@ -17,4 +17,4 @@ set -g fish_greeting
 set -e RUBY_VERSION
 
 set -gx PIPENV_VENV_IN_PROJECT 1
-source /opt/asdf-vm/asdf.fish
+fnm env --use-on-cd | source

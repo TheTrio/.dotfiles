@@ -1,9 +1,9 @@
-asdf-vm
 auto-cpufreq
 brave-bin
 cpu-x
 downgrade
 extramaus
+fnm-bin
 google-chrome
 gromit-mpx
 hardinfo
@@ -21,6 +21,7 @@ paru-bin
 pfetch
 phoronix-test-suite
 qbittorrent-qt5
+ruby-build
 sddm-git
 slack-desktop
 spotify

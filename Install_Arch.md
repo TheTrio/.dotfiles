@@ -99,7 +99,7 @@ Simply run `stow <package_name>` to setup the symlinks.
 To configure everything, run
 
 ```bash
-stow alacritty fish home kitty tldr lsd nvim starship mpris wezterm asdf
+stow alacritty fish home kitty tldr lsd nvim starship mpris wezterm
 ```
 
 ## Kernel
@@ -280,6 +280,29 @@ I keep this ignore list around to make sure that I don't accidentally tile a win
 
 ```text
 systemsettings,xdg-desktop-portal-kde,org.freedesktop.impl.portal.desktop.kde,org.kde.polkit-kde-authentication-agent-1
+```
+
+### Node
+
+I use `fnm` to manage node versions.
+
+```bash
+paru -Syu fnm-bin
+```
+
+### Ruby
+
+I use [`fry`](https://github.com/terlar/fry) to manage my ruby versions. Unfortunately, the more popular tools don't have good support for fish.
+
+```bash
+fisher install terlar/fry
+```
+
+It needs a few configuration options to work properly.
+
+```fish
+fry config installer ruby-build
+fry config auto on
 ```
 
 ### pyenv
