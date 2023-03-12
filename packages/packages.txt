@@ -178,6 +178,7 @@ python-pyparsing
 python-setuptools
 qalculate-qt
 qemu-desktop
+qemu-system-aarch64
 qpwgraph
 ranger
 rclone
