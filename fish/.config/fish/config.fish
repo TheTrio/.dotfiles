@@ -18,3 +18,4 @@ set -e RUBY_VERSION
 
 set -gx PIPENV_VENV_IN_PROJECT 1
 fnm env --use-on-cd | source
+status --is-interactive; and rbenv init - fish | source
