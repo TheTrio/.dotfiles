@@ -39,6 +39,7 @@ duf
 dust
 easyeffects
 efibootmgr
+elixir
 exa
 fakeroot
 fd
@@ -172,7 +173,9 @@ python-appdirs
 python-more-itertools
 python-ordered-set
 python-packaging
+python-pdm
 python-pip
+python-pipx
 python-poetry
 python-pyparsing
 python-setuptools

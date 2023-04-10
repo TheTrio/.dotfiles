@@ -21,6 +21,7 @@ paru-bin
 pfetch
 phoronix-test-suite
 qbittorrent-qt5
+rbenv
 ruby-build
 sddm-git
 slack-desktop
