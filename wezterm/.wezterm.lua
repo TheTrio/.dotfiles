@@ -78,6 +78,10 @@ return {
       regex = [[["]?([\w\d]{1}[-\w\d]+)(/){1}([-\w\d\.]+)["]?]],
       format = 'https://www.github.com/$1/$3',
     },
+    {
+			regex = "\\b\\w+://(?:[\\w.-]+):\\d+\\S*\\b",
+			format = "$0",
+		}
   },
 
   mouse_bindings = {
