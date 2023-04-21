@@ -25,4 +25,4 @@ fi
 # makes firefox respect my default file manager
 export GTK_USE_PORTAL=1
 cd
-
+source "/usr/lib/emsdk/emsdk_env.sh"
