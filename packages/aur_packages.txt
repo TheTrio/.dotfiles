@@ -2,6 +2,7 @@ auto-cpufreq
 brave-bin
 cpu-x
 downgrade
+emsdk
 extramaus
 fnm-bin
 google-chrome

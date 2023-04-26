@@ -91,6 +91,7 @@ kdeplasma-addons
 kdiskmark
 kgamma5
 khotkeys
+kimageformats
 kinfocenter
 kitty
 kmix
