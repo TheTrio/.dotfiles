@@ -33,3 +33,5 @@
 	helper = !/usr/bin/gh auth git-credential
 [push]
 	autoSetupRemote = true
+[safe]
+	directory = /opt/flutter
