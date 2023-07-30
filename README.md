@@ -1,6 +1,6 @@
 # LinuxSetup
 
-A repository containing all of my dot files
+I no longer use most of the stuff here, primarily because I've now switched to using Mac OS. Some stuff like my terminal and shell configs are still relevant though, which is why I'll keep this around for now
 
 # What it has
 
