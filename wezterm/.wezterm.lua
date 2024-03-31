@@ -10,7 +10,7 @@ end
 
 return {
   font = wezterm.font('JetBrains Mono'),
-  font_size = 16,
+  font_size = 14,
   initial_cols = 150,
   initial_rows = 35,
   default_prog = { '/opt/homebrew/bin/fish', '-l' },

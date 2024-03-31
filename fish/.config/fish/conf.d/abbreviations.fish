@@ -1,4 +1,4 @@
-abbr g 'git'
+abbr g git
 abbr ga 'git add'
 abbr gb 'git branch'
 abbr gbl 'git blame'
@@ -25,17 +25,18 @@ abbr glo 'git log --oneline --no-merges'
 abbr pacclean 'sudo pacman -Rsunc $(pacman -Qdtq)'
 abbr gpu 'git pull upstream'
 
-abbr lg 'lazygit'
+abbr lg lazygit
 abbr xcopy 'xclip -sel copy'
-abbr clip 'wl-copy'
-abbr nv 'nvim'
+abbr clip wl-copy
+abbr nv nvim
 
 abbr status 'systemctl status'
 abbr sstart 'sudo systemctl start'
 abbr sstop 'sudo systemctl stop'
+abbr c code
 
-if [ "$TERM_PROGRAM" != "vscode" ]
-  abbr ls 'exa --group-directories-first --long --all --header --git --icons'
+if [ "$TERM_PROGRAM" != vscode ]
+    abbr ls 'eza --group-directories-first --long --all --header --git --icons'
 else
-  abbr ls 'exa --group-directories-first --long --all --header --git'
+    abbr ls 'eza --group-directories-first --long --all --header --git'
 end
